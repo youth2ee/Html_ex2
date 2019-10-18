@@ -1,0 +1,112 @@
+@charset "UTF-8";
+
+.loginmain{
+		width: 53%;
+		margin: 0 auto;
+}
+
+.login1 {
+	width: 20%;
+	padding-top: 50px;
+	margin: 0 auto;
+	float: left;
+}
+
+.login1_1 {
+	margin-bottom: 40px;
+}
+
+.login1_2 {
+	margin-bottom: 24px;
+}
+
+.login2 {
+	padding-top: 50px;
+	margin: 0 auto;
+	float: left;
+	padding-left: 50px;
+	width: 70%;
+}
+
+.login2_1{
+	color: #6f6f6f;
+	font-size: 12px;
+}
+
+.l2_1_1{
+	padding-top: 20px;
+	padding-bottom: 51px;
+}
+
+.l2_1_3{
+	padding-top: 20px;
+	padding-bottom: 51px;
+}
+
+.logint{
+	width: 100%;
+}
+
+.lt1{
+	width: 108px;
+	height: 20px;
+	color: #303030;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0;
+}
+
+.lt2{
+	padding-right: 30px;
+	width: 222px;
+}
+
+.lt3{
+	width: 72px;
+	height: 65px;
+	background-color: #ba000e;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 65px;
+	margin-top: 2px;
+	margin-left: 0;
+	padding-left: 0;
+}
+
+.lt4{
+	padding-top: 8px;
+	font-size: 12px;
+	color: #6f6f6f;
+	padding-bottom: 20px;
+}
+
+.logint2{
+	margin-top: 30px;
+}
+
+.tt1{
+	text-align: center;
+
+}
+
+.tt2{
+	text-align: left;
+	color: #303030;
+	font-size: 14px;
+}
+
+.tt3{
+	text-align: left;
+	color: #6f6f6f;
+	font-size: 12px;
+}
+
+
+.ttr2{
+padding-left: 48px;
+padding-right: 48px;
+}
+
+

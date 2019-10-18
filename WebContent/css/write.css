@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+.writemain{
+		width: 53%;
+		margin: 0 auto;
+	}
+	
+.write1 {
+	width: 20%;
+	padding-top: 50px;
+	margin: 0 auto;
+	float: left;
+}
+
+.write1_1 {
+	margin-bottom: 40px;
+}
+
+.write1_2 {
+	margin-bottom: 24px;
+}
+
+.write2 {
+	padding-top: 50px;
+	margin: 0 auto;
+	float: left;
+	padding-left: 50px;
+	width: 70%;
+}
+
+.write2_1{
+	color: #6f6f6f;
+	font-size: 12px;
+}
+
+.w2_1_1{
+	padding-top: 20px;
+	padding-bottom: 51px;
+}
+
+.write2 table, tr, td{
+	border: 1px solid black;
+	border-collapse: collapse;
+}

@@ -1,112 +1,134 @@
 @charset "UTF-8";
 
-.loginmain{
-		width: 53%;
-		margin: 0 auto;
+.loginmain {
+	width: 70%;
+	margin: 0 auto;
 }
 
 .login1 {
 	width: 20%;
-	padding-top: 50px;
-	margin: 0 auto;
 	float: left;
+	padding-top: 5%;
+	padding-right: 6%;
+	margin: 0 auto;
 }
 
 .login1_1 {
-	margin-bottom: 40px;
+	margin-bottom: 20%;
 }
 
 .login1_2 {
-	margin-bottom: 24px;
+	margin-bottom: 15%;
 }
 
 .login2 {
-	padding-top: 50px;
+	width: 74%;
+	float: right;
+	padding-top: 5%;
 	margin: 0 auto;
-	float: left;
-	padding-left: 50px;
-	width: 70%;
 }
 
-.login2_1{
+.login2_wrap {
+	width: 100%;
+}
+
+.login2_1 {
 	color: #6f6f6f;
 	font-size: 12px;
 }
 
-.l2_1_1{
-	padding-top: 20px;
-	padding-bottom: 51px;
+.l2_1_1 {
+	padding-top: 2%;
+	padding-bottom: 10%;
 }
 
-.l2_1_3{
-	padding-top: 20px;
-	padding-bottom: 51px;
+.l2_1_3 {
+	padding-top:2%;
+	padding-bottom: 10%;
 }
 
-.logint{
+.logint {
 	width: 100%;
 }
 
-.lt1{
-	width: 108px;
-	height: 20px;
+.lt1 {
+	width: 16%;
+	height: 30%;
+	/* line-height:20px; */
 	color: #303030;
 	font-size: 14px;
 	font-weight: bold;
+	padding-bottom: 4px;
+}
+
+.lt2 {
+	width:15.625%;
+	padding-bottom: 1%;
+}
+
+.lt2 input{
+	width: 17em;
+	height:1.9em;
 	padding: 0;
 }
 
-.lt2{
-	padding-right: 30px;
-	width: 222px;
-}
-
-.lt3{
-	width: 72px;
-	height: 65px;
+.lt3 {
+ 	width: 20%;
+	height: 5em;
+	line-height:5em;
 	background-color: #ba000e;
 	color: #ffffff;
 	font-size: 13px;
 	font-weight: bold;
 	text-align: center;
-	line-height: 65px;
-	margin-top: 2px;
-	margin-left: 0;
-	padding-left: 0;
+	
+	margin-left: 10px;
+	margin-bottom: 5px;
+
 }
 
-.lt4{
-	padding-top: 8px;
+.lt4 {
+	padding-top: 1%;
 	font-size: 12px;
 	color: #6f6f6f;
-	padding-bottom: 20px;
+	padding-bottom: 3%;
 }
 
-.logint2{
-	margin-top: 30px;
+.logint2 {
+	margin-top:5%;
 }
 
-.tt1{
+.tt1 {
+	width:33.3%;
 	text-align: center;
-
+	padding-bottom: 10px;
+	/* background-color: red; */
 }
 
-.tt2{
+.tt2 {
 	text-align: left;
 	color: #303030;
 	font-size: 14px;
+	font-weight: bold;
+	padding-bottom: 3px;
 }
 
-.tt3{
+.tt3 {
 	text-align: left;
 	color: #6f6f6f;
 	font-size: 12px;
+	padding-bottom: 15px;
 }
 
-
-.ttr2{
-padding-left: 48px;
-padding-right: 48px;
+.ttr {
+	margin-left: 48px;
+	margin-right: 48px;
 }
 
-
+.tt4 input{
+	width: 117px;
+	 height: 29px;
+	 color: #303030; 
+	 font-size: 13px; 
+	 font-weight: bold;
+}

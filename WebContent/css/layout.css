@@ -3,145 +3,261 @@
 /* header */
 header {
 	width: 100%;
-	/* height: 200px; */
 	color: white;
-
 }
 
-.header_wrap{
-	/* width:48.9583%;  */
-	width: 53%;
-	/* height: 200px; */
+.header_wrap {
+	width: 70%;
 	margin: 0 auto;
 	overflow: hidden;
-}
-
-.header_top{
-/* 	height:133px; */
-box-sizing: border-box;
-
-}
-
-.ht1{
-/* 	width: 45%; */
-	float: left;
-}
-
-.ht1 li{
-	float: left;
-	line-height: 40px;
-}
-
-.ht_logo{
-	float:left;
-	text-align: center;
-	line-height: 133px;
-	margin-left: 198px;	
-	margin-top: 15px;
-	margin-bottom: 0;
-}
-
-.ht2{
-/* 	width: 45%; */
-	float: right;
-	margin-right: 10px;
-}
-
-
-.ht2 li{
-	padding-left: 10px;
-	float: left;
-}
-
-.c{
-	margin-top: 2px;
 	
 }
 
-.header_menu{	
-	float: left;
-	padding-left: 5%;
+.header_top {
+	width: 100%;
+	padding-top: 1%;
 }
 
-.header_menu li{
-	width: 130px;
-	height: 60px;
+.ht1 {
+	float: left;
+	padding-left: 3%;
+}
+
+.ht1 li {
+	float: left;
+}
+
+.ht2 {
+	float: right;
+	text-align: center;
+}
+
+.ht2 li {
+	float: left;
+}
+
+.ht_logo {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	padding-left: 47%;
+}
+
+.header_menu {
+	width: 100%;
+	float: left;
+}
+
+.header_menu li {
+	width: 16.667%;
 	float: left;
 	text-align: center;
-	line-height: 60px;
+	line-height: 50px;
 }
 
-.header_menu li:hover{
-	background-color: red;
+.header_menu li:hover {
+	background-color: #ba000c;
 }
-
 
 /* main */
-.main{
+.main {
 	width: 100%;
 	clear: both;
-	/* height: 900px; */
 	min-height: 800px;
 	margin: 0 auto;
 	background-color: white;
 	overflow: hidden;
 	border-top: 2px #ba000e solid;
-		margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
-.main1{
+.main1 {
 	width: 100%;
-	margin-bottom: 20px
+	margin-bottom: 50px;
 }
 
-.main2{
+.main1 img {
+	width: 100%;
+}
 
-	width: 53%;
+.main2 {
+	width: 70%;
 	margin: 0 auto;
-	background-color: olive;
-	padding-left: 14px;
-
+	color: #6f6f6f;
+	font-size: 12px;
 }
 
-.main2 li {
+.main2_wrap {
+	width: 100%;
+	margin: 0 auto;
+	background-color: aqua;
+}
+
+.m21 {
+	width:25%;
 	float: left;
-	overflow: hidden;	
+	text-align: left;
 }
 
-.main3{
-	width: 53%;
+.m21 img{
+	width: 100%;
+}
+
+.m22 {
+	float: left;
+	width: 50%;
+	height: 270px;
+}
+
+.m22 > img {
+	width: 100%;
+	padding-left: 4%;
+}
+
+.m221{
+	
+	width: 100%;
+	height: 178px;
 	margin: 0 auto;
 }
 
-.main3 li{
+.m221 table{
+	margin: 0 auto;
+	padding-top: 5%;
+}
+
+.m221 td{
+	width:33.333%;
+	padding-left: 2%;
+	padding-right:2%;
+}
+
+.m221td{
+	padding-left:5%;
+	padding-right:5%;
+	border-left: 1px dotted gray;
+	border-right: 1px dotted gray;
+}
+
+.m23 {
+	width:25%;
+	float: right;
+	text-align: right;
+}
+
+.m23 img{
+	width: 100%;
+}
+
+.main3 {
+	clear: both;
+	width: 70%;
+	margin: 0 auto;
+}
+
+.main3_wrap {
+	width: 100%;
+	padding-top: 40px;
+	margin: 0 auto;
+}
+
+
+.m31 {
+	width:50%;
+	text-align: left;
+	float: left;
+	margin-right: 2px;
+}
+
+.m31 img{
+	width: 100%;
+}
+
+.m32 {
+	width:49%;
+	float: right;
+	text-align: right;
+}
+
+.m32 img {
+	width: 100%;
+}
+
+.main4 {
+	width: 70%;
+	margin: 0 auto;
+	text-align: left;
+	color: #6f6f6f;
+	font-size: 12px;
+}
+
+.main4_wrap {
+	width: 100%;
+	float: left;
+	padding-top: 30px;
+	/* padding-right: 10px; */
+	padding-bottom: 30px;
+	/* padding-left: 10px; */
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.m4{
+	width:23%;
+	padding-right:1%;
+	padding-left:1%;
 	float: left;
 }
 
+.m4p {
+	padding-down: 5px;
+	padding-top: 5px;
+}
+
+.m4s {
+	float: right;
+}
+
+.m4 td {
+	text-align: center;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.m4 table {
+	width:100%;
+	margin: 0 auto;
+}
+
+.ta {
+	border-left: 1px dotted gray;
+	border-right: 1px dotted gray;
+}
 
 /* footer */
-footer{
+footer {
+	clear:both;
 	width: 100%;
 	height: 148px;
 	background-color: #ba000c;
 	overflow: hidden;
 }
 
-.footer_wrap{
+.footer_wrap {
 	font-size: 11px;
-	width: 53%;
+	width: 70%;
 	height: 148px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding-top: 33px;
 }
 
-.footer_info_1{
+.footer_info_1 {
 	float: left;
 	color: #faeff0;
 	padding-bottom: 20px;
 }
 
-.footer_info_1 li{
+.footer_info_1 li {
 	float: left;
 	padding-right: 10px;
 }

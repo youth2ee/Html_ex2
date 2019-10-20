@@ -12,34 +12,35 @@
 
 </head>
 <body>
+
 	<!-- header -->
 	<header>
 		<div class="header_wrap">
+
 			<div class="header_top">
 				<div class="ht1">
 					<ul>
-						<li class="c"><img src="/Html_ex2/img/h_t/gnb_smenu01.png"></li>
-						<li><img src="/Html_ex2/img/h_t/gnb_smenu02_2.gif"></li>
-						<li><img src="/Html_ex2/img/h_t/gnb_smenu04.gif"></li>
+						<li><img src="/Html_ex2/img/h_t/1.jpg"></li>
+						<li><img src="/Html_ex2/img/h_t/2.jpg"></li>
+						<li><img src="/Html_ex2/img/h_t/3.jpg"></li>
 					</ul>
 				</div>
 
-				<div class="ht_logo">
-					<a href="/Html_ex2/index.jsp"><img src="/Html_ex2/img/logo.gif"></a>
-
-				</div>
 
 				<div class="ht2">
 					<ul>
-						<li><img src="/Html_ex2/img/h_t/util_login.gif"></li>
-						<li><img src="/Html_ex2/img/h_t/util_join.gif"></li>
-						<li><img src="/Html_ex2/img/h_t/util_09.gif"></li>
-						<li class="c"><img src="/Html_ex2/img/h_t/util_eng.gif"></li>
-						<li class="c"><img src="/Html_ex2/img/h_t/util_chinese.gif"></li>
+						<li><img src="/Html_ex2/img/h_t/4.jpg"></li>
+						<li><img src="/Html_ex2/img/h_t/5.jpg"></li>
+						<li><img src="/Html_ex2/img/h_t/6.jpg"></li>
+						<li><img src="/Html_ex2/img/h_t/7.jpg"></li>
+						<li><img src="/Html_ex2/img/h_t/8.jpg"></li>
 					</ul>
 				</div>
 			</div>
 
+			<div class="ht_logo">
+				<a href="/Html_ex2/index.jsp"><img src="/Html_ex2/img/logo.gif"></a>
+			</div>
 
 			<div class="header_menu">
 				<ul>
@@ -61,13 +62,14 @@
 
 		</div>
 	</header>
+	
 
 
 	<!-- section -->
 	<section class="main">
 		<div class="loginmain">
-			<article class="login1">
-
+			<article  class="login1">
+				<div class="login1_wrap">
 				<ul class="login1_1">
 					<li><img src="../img/login/left1.gif"></li>
 					<li><img src="../img/login/left2.gif"></li>
@@ -84,10 +86,11 @@
 				<ul>
 					<li><img src="../img/login/left5.gif"></li>
 				</ul>
+				 </div>
 			</article>
 
 			<article class="login2">
-
+				<div class="login2_wrap"> 
 				<ul class="login2_1">
 					<li>Home > 멤버십로그인</li>
 					<li class="l2_1_1"><img src="../img/login/right1.gif"></li>
@@ -99,8 +102,8 @@
 					<table class="logint">
 						<tr>
 							<td class="lt1">아이디</td>
-							<td class="lt2"><input type="text"
-								style="width: 222px; height: 25px; padding: 0;"></td>
+							<td class="lt2">
+							<input type="text"></td>
 							<td rowspan="2">
 								<div class="lt3">로그인</div>
 							</td>
@@ -108,8 +111,7 @@
 
 						<tr>
 							<td class="lt1">비밀번호</td>
-							<td class="lt2"><input type="password"
-								style="width: 222px; height: 25px; padding: 0;"></td>
+							<td class="lt2"><input type="password"></td>
 						</tr>
 
 						<tr>
@@ -124,36 +126,34 @@
 					</table>
 
 					<table class="logint2">
-						<tr class="tt1">
-							<td class="ttr1"><img src="../img/login/gnb_smenu01.png"></td>
-							<td class="ttr2"><img src="../img/login/gnb_smenu02.png"></td>
-							<td class="ttr3"><img src="../img/login/gnb_smenu03.png"></td>
+						<tr>
+							<td class="tt1"><img src="../img/login/gnb_smenu01.png"></td>
+							<td class="tt1 ttr"><img src="../img/login/gnb_smenu02.png"></td>
+							<td class="tt1"><img src="../img/login/gnb_smenu03.png"></td>
 						</tr>
 
-						<tr class="tt2">
-							<td class="ttr1">아이디를 잊어버리셨나요?</td>
-							<td class="ttr2">비밀번호를 잊어버리셨나요?</td>
-							<td class="ttr3">할리스커피의 회원이 아니신가요?</td>
+						<tr>
+							<td class="tt2">아이디를 잊어버리셨나요?</td>
+							<td class="tt2 ttr">비밀번호를 잊어버리셨나요?</td>
+							<td class="tt2">할리스커피의 회원이 아니신가요?</td>
 						</tr>
 
-						<tr class="tt3">
-							<td class="ttr1">고객님의 아이디를 찾아드립니다.</td>
-							<td class="ttr2">고객님의 비밀번호를 찾아드립니다.</td>
-							<td class="ttr3">회원가입하시고 다양한 혜택을 누리세요.</td>
+						<tr>
+							<td class="tt3">고객님의 아이디를 찾아드립니다.</td>
+							<td class="tt3 ttr">고객님의 비밀번호를 찾아드립니다.</td>
+							<td class="tt3">회원가입하시고 다양한 혜택을 누리세요.</td>
 						</tr>
 
 
 						<tr class="tt4">
-							<td class="ttr1"><input type="submit" value="아이디 찾기"
-								style="width: 117px; height: 29px; color: #303030; font-size: 13px; font-weight: bold;"></td>
-							<td class="ttr2"><input type="submit" value="비밀번호 찾기"
-								style="width: 117px; height: 29px; color: #303030; font-size: 13px; font-weight: bold;"></td>
-							<td class="ttr3"><input type="submit" value="회원가입"
-								style="width: 117px; height: 29px; color: #303030; font-size: 13px; font-weight: bold;"></td>
+							<td><input type="submit" value="아이디 찾기"></td>
+							<td class="ttr"><input type="submit" value="비밀번호 찾기"></td>
+							<td><input type="submit" value="회원가입"></td>
 						</tr>
 
 					</table>
 				</form>
+				</div>
 			</article>
 
 		</div>

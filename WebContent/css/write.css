@@ -1,31 +1,36 @@
 @charset "UTF-8";
 
 .writemain{
-		width: 53%;
+		width: 70%;
 		margin: 0 auto;
 	}
 	
 .write1 {
 	width: 20%;
-	padding-top: 50px;
-	margin: 0 auto;
 	float: left;
+	padding-top: 5%;
+	padding-right: 6%;
+	margin: 0 auto;
 }
 
 .write1_1 {
-	margin-bottom: 40px;
+	margin-bottom: 20%;
 }
 
 .write1_2 {
-	margin-bottom: 24px;
+	margin-bottom: 15%;
 }
 
 .write2 {
-	padding-top: 50px;
-	margin: 0 auto;
-	float: left;
-	padding-left: 50px;
 	width: 70%;
+	float: left;
+	padding-top: 5%;
+	margin: 0 auto;
+	/* padding-left: 50px; */
+}
+
+.write2_wrap{
+	width: 100%;
 }
 
 .write2_1{
@@ -34,11 +39,126 @@
 }
 
 .w2_1_1{
-	padding-top: 20px;
-	padding-bottom: 51px;
+	padding-top: 2%;
+	padding-bottom: 10%;
 }
 
 .write2 table, tr, td{
-	border: 1px solid black;
-	border-collapse: collapse;
+	border-collapse: collapse; 
+	color:#303030;
+}
+
+
+.write2 select{
+	color: #6f6f6f;
+}
+
+.wt1 td{
+	font-weight: bold;
+	border-bottom: 2px solid black;
+	font-size: 16px;
+	padding-bottom: 20px;
+}
+
+.wt2{
+	font-weight: bold;
+	font-size: 12px;
+	width: 15%;
+	padding-left: 13px;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-bottom: 1px solid  #d9d9d9;
+	border-right: 1px solid  #d9d9d9;
+}
+
+.wt3 {
+	padding-left:5px;
+	border-bottom: 1px solid  #d9d9d9;
+}
+
+.wt2title{
+	width:100%;
+	padding-left: 1%;
+	padding-right: 1%;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.wt2title input{
+	width: 99%;
+	height: 24px;
+	border: #afafaf 1px solid;
+}
+
+.wt3 select{
+	width: 120px;
+	height: 30px;
+	border: #afafaf 1px solid;
+}
+
+.wt3 input{
+	width: 120px;
+	height: 24px;
+	border: #afafaf 1px solid;
+}
+
+.wt4{
+	width: 39%;
+	padding-left: 1%;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.wt4 input{
+	width: 95%;
+	height: 24px;
+	border: #afafaf 1px solid;
+}
+
+.wt2file{
+	padding: 1%;
+	color: #6f6f6f;
+	font-size: 12px;
+	border-bottom: 1px solid #d9d9d9;
+}
+
+.wt2file input{
+	color: #6f6f6f;
+	padding-bottom: 1%;
+}
+
+.wt2text{
+	padding-left: 1%;
+	padding-top: 0.5%;
+}
+
+.wt2text textarea{
+	width: 99%;
+	height: 82px;
+	box-sizing: border-box;
+}
+
+.wt2msg{
+	color: #6f6f6f;
+	font-size: 12px;
+	border: #afafaf 1px solid;
+	padding: 1.7%;
+	margin: 1.5%;
+	line-height: 1.5em;
+	box-sizing: border-box;
+}
+
+.wt5{
+	border-top: 2px solid black;
+	border-bottom: 1px solid white;
+	margin: 0 auto;
+	text-align: center;
+	height: 30px
+}
+
+.wt5 input{
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 13px;
+	width: 89px;
+	height: 30px;
+	margin-bottom: 12%;
 }

@@ -27,9 +27,21 @@
 
 				<div class="ht2">
 					<ul>
-						<li><img src="/Html_ex2/img/h_t/4.jpg"></li>
-						<li><img src="/Html_ex2/img/h_t/5.jpg"></li>
-						<li><img src="/Html_ex2/img/h_t/6.jpg"></li>
+						<li>
+						<a href="/Html_ex2/member/login.jsp">
+						<img src="/Html_ex2/img/h_t/4.jpg">
+						</a>
+						</li>
+						<li>
+						<a href="/Html_ex2/member/join_front.jsp">
+						<img src="/Html_ex2/img/h_t/5.jpg">
+						</a>
+						</li>
+						<li>
+						<a href="/Html_ex2/write/write.jsp">
+						<img src="/Html_ex2/img/h_t/6.jpg">
+						</a>
+						</li>
 						<li><img src="/Html_ex2/img/h_t/7.jpg"></li>
 						<li><img src="/Html_ex2/img/h_t/8.jpg"></li>
 					</ul>
@@ -67,7 +79,11 @@
 			<article class="joinf1">
 				<div class="joinf1_wrap">
 					<ul class="joinf1_1">
-						<li><img src="../img/join/join1.gif"></li>
+						<li>
+						<a href="join_main.jsp">
+						<img src="../img/join/join1.gif">
+						</a>
+						</li>
 					</ul>
 
 
@@ -152,8 +168,8 @@
 								
 								<div style="padding-top: 1px;">
 								<input  class="jmt_input"  type="text" style="width: 107px;">
-								@ <input  class="jmt_input"  type="text" style="width: 107px;background-color: #f6f6f6;border: 1px solid #afafaf">
-									<select style="height: 26.8px;margin-top: 4px;width: 120px;color: #6f6f6f;">
+								@ <input  class="jmt_input jmtemail"  type="text">
+									<select class="jmtemail_s">
 										<option selected="selected">선택하세요</option>
 										<option>naver.com</option>
 										<option>daum.net</option>
@@ -173,7 +189,7 @@
 								<td class="jmtl">주소(선택)</td>
 								<td class="jmtr">
 								<div style="padding-top: 5px; padding-bottom: 3px;">
-								<input  class="jmt_input"  type="text" style="width: 86%;background-color: #f6f6f6;border: 1px solid #afafaf"> 
+								<input class="jmt_input jmtadd"  type="text"> 
 								<input class="jmtr_b" type="submit" value="주소찾기"> <br>
 								</div>
 								<input  class="jmt_input"  type="text"  style="width: 98.2%;">
@@ -196,8 +212,8 @@
 							<tr>
 								<td colspan="2">
 								<div style="padding-top: 12%; padding-bottom: 5%;">
-									<p style="font-size: 12px;color: #303030;font-weight: bold;line-height: 18px;">현금 영수증 등록 안내</p>
-									<div style="font-size: 11px; color: #6f6f6f;line-height: 18px;">
+									<p class="jmtf_txt">현금 영수증 등록 안내</p>
+									<div class="jmtf_txt2">
 										현금영수증 발급 정보를 등록하시면 매장에서 결제 시 자동 발급됩니다. <br>
 										MY HOLLYS > 회원정보 관리에서 설정하실 수 있습니다.
 									</div>
@@ -208,19 +224,22 @@
 							<tr style="text-align: center;">
 								<td colspan="2">
 								<div style="margin-bottom: 12%;">
-								<input type="submit" value="가입하기" style="width: 82px;height: 35px;font: 13px;color: #ffffff;background-color: #ba000e;font-weight: bold;border: 1px solid #ba000e;"> 
-								<input type="submit" value="이전페이지" style="width: 82px;height: 35px;font: 13px;color: #303030;font-weight: bold;border: 1px solid #aeaeae;" >
+								
+								
+								<a href="./login.jsp">
+								<input id="jmf_b1" type="button" value="가입하기">
+								</a>
+								
+								<a href="./join_front.jsp">
+								<input id="jmf_b2" type="submit" value="이전페이지" >
+								</a>
+								
 							    </div>
 								</td>
 							</tr>
 
-
 						</table>
 					</form>
-
-
-
-
 				</div>
 			</article>
 

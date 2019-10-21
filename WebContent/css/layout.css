@@ -37,6 +37,10 @@ header {
 	float: left;
 }
 
+#ht2_3{
+	padding-right:9px;
+}
+
 .ht_logo {
 	margin-top: 2%;
 	margin-bottom: 2%;
@@ -116,26 +120,26 @@ header {
 }
 
 .m221{
-	
 	width: 100%;
 	height: 178px;
 	margin: 0 auto;
 }
 
 .m221 table{
+	width:80%;
 	margin: 0 auto;
 	padding-top: 5%;
 }
 
 .m221 td{
-	width:33.333%;
-	padding-left: 2%;
-	padding-right:2%;
+	width:34.333%;
+/* 	padding-left: 2%;
+	padding-right:2%; */
 }
 
 .m221td{
-	padding-left:5%;
-	padding-right:5%;
+	padding-left:8%;
+	padding-right:8%;
 	border-left: 1px dotted gray;
 	border-right: 1px dotted gray;
 }
@@ -220,7 +224,7 @@ header {
 
 .m4s {
 	float: left;
-	padding-left: 10px;
+	padding-left: 5%;
 }
 
 .m4s2 {

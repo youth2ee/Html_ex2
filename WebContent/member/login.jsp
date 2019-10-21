@@ -29,9 +29,21 @@
 
 				<div class="ht2">
 					<ul>
-						<li><img src="/Html_ex2/img/h_t/4.jpg"></li>
-						<li><img src="/Html_ex2/img/h_t/5.jpg"></li>
-						<li><img src="/Html_ex2/img/h_t/6.jpg"></li>
+						<li>
+						<a href="/Html_ex2/member/login.jsp">
+						<img src="/Html_ex2/img/h_t/4.jpg">
+						</a>
+						</li>
+						<li>
+						<a href="/Html_ex2/member/join_front.jsp">
+						<img src="/Html_ex2/img/h_t/5.jpg">
+						</a>
+						</li>
+						<li>
+						<a href="/Html_ex2/write/write.jsp">
+						<img src="/Html_ex2/img/h_t/6.jpg">
+						</a>
+						</li>
 						<li><img src="/Html_ex2/img/h_t/7.jpg"></li>
 						<li><img src="/Html_ex2/img/h_t/8.jpg"></li>
 					</ul>
@@ -71,7 +83,11 @@
 			<article  class="login1">
 				<div class="login1_wrap">
 				<ul class="login1_1">
-					<li><img src="../img/login/left1.gif"></li>
+					<li>
+					<a href="login.jsp">
+					<img src="../img/login/left1.gif">
+					</a>
+					</li>
 					<li><img src="../img/login/left2.gif"></li>
 					<li><img src="../img/login/left3.gif"></li>
 				</ul>
@@ -93,7 +109,9 @@
 				<div class="login2_wrap"> 
 				<ul class="login2_1">
 					<li>Home > 멤버십로그인</li>
-					<li class="l2_1_1"><img src="../img/login/right1.gif"></li>
+					<li class="l2_1_1">
+					<img src="../img/login/right1.gif">
+					</li>
 					<li class="l2_1_2"><img src="../img/login/right2.gif"></li>
 					<li class="l2_1_3"><img src="../img/login/right3.gif"></li>
 				</ul>
@@ -105,7 +123,11 @@
 							<td class="lt2">
 							<input type="text"></td>
 							<td rowspan="2">
-								<div class="lt3">로그인</div>
+								<div class="lt3">
+								<a href="../index.jsp">
+								로그인
+								</a>
+								</div>
 							</td>
 						</tr>
 
@@ -116,7 +138,7 @@
 
 						<tr>
 							<td></td>
-							<td class="lt4"><input type="checkbox" name="check">
+							<td class="lt4"><input type="checkbox" name="check" checked="checked">
 								아이디저장</td>
 							<td></td>
 						</tr>

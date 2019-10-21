@@ -27,9 +27,21 @@
 
 				<div class="ht2">
 					<ul>
-						<li><img src="/Html_ex2/img/h_t/4.jpg"></li>
-						<li><img src="/Html_ex2/img/h_t/5.jpg"></li>
-						<li><img src="/Html_ex2/img/h_t/6.jpg"></li>
+						<li>
+						<a href="/Html_ex2/member/login.jsp">
+						<img src="/Html_ex2/img/h_t/4.jpg">
+						</a>
+						</li>
+						<li>
+						<a href="/Html_ex2/member/join_front.jsp">
+						<img src="/Html_ex2/img/h_t/5.jpg">
+						</a>
+						</li>
+						<li id=ht2_3>
+						<a href="/Html_ex2/write/write.jsp">
+						<img src="/Html_ex2/img/h_t/6.jpg">
+						</a>
+						</li>
 						<li><img src="/Html_ex2/img/h_t/7.jpg"></li>
 						<li><img src="/Html_ex2/img/h_t/8.jpg"></li>
 					</ul>
@@ -79,7 +91,7 @@
 				
 				<div class="m221">
 				<table>
-				<tr>
+				<tr style="text-align: center;">
 				<td><img src="./img/s/m21.jpg"> </td>
 				<td class="m221td">
 				<img src="./img/s/m22.jpg"></td>

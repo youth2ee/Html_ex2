@@ -27,9 +27,21 @@
 
 				<div class="ht2">
 					<ul>
-						<li><img src="/Html_ex2/img/h_t/4.jpg"></li>
-						<li><img src="/Html_ex2/img/h_t/5.jpg"></li>
-						<li><img src="/Html_ex2/img/h_t/6.jpg"></li>
+						<li>
+						<a href="/Html_ex2/member/login.jsp">
+						<img src="/Html_ex2/img/h_t/4.jpg">
+						</a>
+						</li>
+						<li>
+						<a href="/Html_ex2/member/join_front.jsp">
+						<img src="/Html_ex2/img/h_t/5.jpg">
+						</a>
+						</li>
+						<li>
+						<a href="/Html_ex2/write/write.jsp">
+						<img src="/Html_ex2/img/h_t/6.jpg">
+						</a>
+						</li>
 						<li><img src="/Html_ex2/img/h_t/7.jpg"></li>
 						<li><img src="/Html_ex2/img/h_t/8.jpg"></li>
 					</ul>
@@ -68,7 +80,11 @@
 			<article class="write1">
 				<div class="write1_wrap">
 					<ul class="write1_1">
-						<li><img src="../img/write/left1.gif"></li>
+						<li>
+						<a href="./write.jsp">
+						<img src="../img/write/left1.gif">
+						</a>
+						</li>
 						<li><img src="../img/write/left2.gif"></li>
 						<li><img src="../img/write/left3.gif"></li>
 					</ul>

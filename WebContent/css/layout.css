@@ -52,6 +52,10 @@ header {
 	float: left;
 }
 
+.header_menu ul{
+	width: 100%;
+}
+
 .header_menu li {
 	width: 16.667%;
 	float: left;

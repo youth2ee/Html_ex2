@@ -170,17 +170,10 @@
 							<td rowspan="2">
 							<div class="lt3"> 
 								<!-- <p><input type="button" value="login" onclick="check1()"></p> -->
-								<p><input type="button" value="login" onclick="check3()"></p>
+								
+								<p><input id="lt3_b" type="button" value="login" onclick="check3()"></p>
 								<!-- <p><button onclick="return check2()">login</button></p>  -->
 								<!-- 버튼태그는 검사를 못한다. 버튼태그는 값이 true면 폼을 submit시키는 이벤트가 있으므로, 리턴값을 false로 받으면 폼으로 넘어가지 않는다.  -->
-									
-<!-- 								<div id="id_r">
-								
-								</div>	
-								
-								<div id="pw_r">
-								
-								</div> -->
 									
 								<!-- <a href="../index.jsp"> 로그인 </a> -->
 							</div>

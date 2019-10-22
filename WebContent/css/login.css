@@ -83,6 +83,17 @@
 	text-align: center;
 }
 
+#lt3_b{
+	color: white;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	background-color: #ba000e;
+	border-collapse: collapse; 
+	border-spacing: 0px;
+}
+
+
 .lt3 a {
 	color: #ffffff;
 }

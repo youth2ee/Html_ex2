@@ -134,12 +134,12 @@
 					<img src="./img/s/news_tit.gif"> <img src="./img/s/ico_arrow.gif"><br>
 					
 					<div class="m4p">
-						<span class="m4s2">2019 플래너 - 4종 쿠폰 사…</span> 
-						<span class="m4s">01-30</span><br> 
-						<span class="m4s2">[멤버십 혜택] 레드 회원 아… </span> 
-						<span class="m4s">03-26</span><br> 
-						<span class="m4s2">SKTelecom T멤버십 VIP Pi… </span> 
-						<span class="m4s">04-11</span><br>
+						<span class="m4s">2019 플래너 - 4종 쿠폰 사…</span> 
+						<span class="m4s2">01-30</span><br> 
+						<span class="m4s">[멤버십 혜택] 레드 회원 아… </span> 
+						<span class="m4s2">03-26</span><br> 
+						<span class="m4s">SKTelecom T멤버십 VIP Pi… </span> 
+						<span class="m4s2">04-11</span><br>
 					</div>
 					
 				</div>

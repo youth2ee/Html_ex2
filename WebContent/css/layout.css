@@ -216,12 +216,12 @@ header {
 
 .m4s {
 	float: left;
-	padding-left: 5%;
+	padding-left: 3%;
 }
 
 .m4s2 {
-	float: left;
-	padding-right: 15%;
+	float: right;
+	padding-right: 1%;
 }
 
 .m4 td {

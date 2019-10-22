@@ -9,6 +9,33 @@
 <link href="../css/layout.css" rel="stylesheet">
 <link href="../css/login.css" rel="stylesheet">
 
+<script type="text/javascript">
+
+	function check1() {
+		var id = document.getElementById("l_c_id").value;
+		var pw = document.getElementById("l_c_pw").value;
+
+		if (id == "" || pw == "") {
+			alert("입력하세요");
+		} else {
+			alert("ok");
+		}
+	}
+	
+	function check2() {
+		var id = document.getElementById("l_c_id").value;
+		var pw = document.getElementById("l_c_pw").value;
+		
+		if (id == "" || pw == "") {
+			alert("입력하세요");
+		} else {
+			alert("ok");
+		}
+		
+		return false;
+	}
+</script>
+
 
 </head>
 <body>
@@ -116,35 +143,37 @@
 					<li class="l2_1_3"><img src="../img/login/right3.gif"></li>
 				</ul>
 
-				<form action="#">
+				<form action="../index.jsp">
 					<table class="logint">
 						<tr>
 							<td class="lt1">아이디</td>
-							<td class="lt2">
-							<input type="text"></td>
+							<td class="lt2"><input id="l_c_id" type="text"></td>
 							<td rowspan="2">
-								<div class="lt3">
-								<a href="../index.jsp">
-								로그인
-								</a>
-								</div>
+							<div class="lt3"> 
+								<p><input type="button" value="login" onclick="check1()"></p>
+								<p><button onclick="return check2()">login</button></p> 
+								<!-- 버튼태그는 검사를 못한다. 버튼태그는 값이 true면 폼을 submit시키는 이벤트가 있으므로, 리턴값을 false로 받으면 폼으로 넘어가지 않는다.  -->
+									
+								<!-- <a href="../index.jsp"> 로그인 </a> -->
+							</div>
 							</td>
 						</tr>
 
 						<tr>
 							<td class="lt1">비밀번호</td>
-							<td class="lt2"><input type="password"></td>
+							<td class="lt2"><input id="l_c_pw" type="password"></td>
 						</tr>
 
 						<tr>
 							<td></td>
-							<td class="lt4"><input type="checkbox" name="check" checked="checked">
-								아이디저장</td>
+							<td class="lt4"><input type="checkbox" name="check" checked="checked">아이디저장</td>
 							<td></td>
 						</tr>
 
 						<tr>
-							<td colspan="3" style="border-top: 1px rgb(180, 180, 180) solid">
+							<td colspan="3" style="border-top: 1px rgb(180, 180, 180) solid"></td>
+						</tr>
+							
 					</table>
 
 					<table class="logint2">
@@ -209,9 +238,6 @@
 			</div>
 		</div>
 	</footer>
-
-
-
 
 
 

@@ -34,6 +34,25 @@
 		
 		return false;
 	}
+	
+	function check3() {
+		var id = document.getElementById("l_c_id").value;
+		var pw = document.getElementById("l_c_pw").value;
+		
+		if(id == ""){
+			/* 아이디 값이 없다. -> html로 프린트 해야한다. */
+			var idt = "아이디가 없습니다.";
+			document.getElementById("id_r").innerHTML = idt;
+		} 
+		
+		if(pw == ""){
+			var pwt = "패스워드가 없습니다.";
+			document.getElementById("pw_r").innerHTML = pwt;
+		}
+	}
+	
+	
+	
 </script>
 
 
@@ -150,9 +169,18 @@
 							<td class="lt2"><input id="l_c_id" type="text"></td>
 							<td rowspan="2">
 							<div class="lt3"> 
-								<p><input type="button" value="login" onclick="check1()"></p>
-								<p><button onclick="return check2()">login</button></p> 
+								<!-- <p><input type="button" value="login" onclick="check1()"></p> -->
+								<p><input type="button" value="login" onclick="check3()"></p>
+								<!-- <p><button onclick="return check2()">login</button></p>  -->
 								<!-- 버튼태그는 검사를 못한다. 버튼태그는 값이 true면 폼을 submit시키는 이벤트가 있으므로, 리턴값을 false로 받으면 폼으로 넘어가지 않는다.  -->
+									
+<!-- 								<div id="id_r">
+								
+								</div>	
+								
+								<div id="pw_r">
+								
+								</div> -->
 									
 								<!-- <a href="../index.jsp"> 로그인 </a> -->
 							</div>
@@ -168,6 +196,13 @@
 							<td></td>
 							<td class="lt4"><input type="checkbox" name="check" checked="checked">아이디저장</td>
 							<td></td>
+						</tr>
+						
+						<tr>
+						<td colspan="4">
+						<div id="id_r">1</div>	
+						<div id="pw_r">1</div>
+						</td>
 						</tr>
 
 						<tr>

@@ -128,7 +128,7 @@
 								<td class="wt2">방문일자</td>
 								<td class="wt3" colspan="3">
 								<select>
-										<option id="s_year" selected="selected" on >년도</option>
+										<option id="s_year" selected="selected">년도</option>
 <!-- 									<option>2019년</option>
 										<option>2018년</option>
 										<option>2017년</option>
@@ -267,8 +267,6 @@
 						</table>
 						
 						<script type="text/javascript">
-						
-						function syear() {
 						var option = "";
 						var s_year = document.getElementById("s_year");
 						
@@ -277,8 +275,6 @@
 						}
 						
 						document.getElementById("s_year").innerHTML = op; 
-							
-						}
 						
 						</script>
 						

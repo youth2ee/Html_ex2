@@ -36,22 +36,46 @@
 	}
 	
 	function check3() {
+		/* var id ="";
+		var pw =""; */
+		
+		document.getElementById("id_r").innerHTML = "<p>&nbsp; </p>";
+		document.getElementById("pw_r").innerHTML = "<p>&nbsp; </p>";
+		
 		var id = document.getElementById("l_c_id").value;
 		var pw = document.getElementById("l_c_pw").value;
 		
-		if(id == ""){
-			/* 아이디 값이 없다. -> html로 프린트 해야한다. */
+/*  		if(id == ""){
+			 아이디 값이 없다. -> html로 프린트 해야한다. 
 			var idt = "아이디가 없습니다.";
 			document.getElementById("id_r").innerHTML = idt;
+		} else if(pw == ""){
+			var pwt = "패스워드가 없습니다.";
+			document.getElementById("pw_r").innerHTML = pwt;
+		} else if(id == "" && pw == ""){
+			var idt = "아이디가 없습니다.";
+			var pwt = "패스워드가 없습니다.";
+			document.getElementById("id_r").innerHTML = idt;
+			document.getElementById("pw_r").innerHTML = pwt;
 		} 
-		
-		if(pw == ""){
+ 		 */
+ 		
+ 		if(id == "" && pw == ""){
+			var idt = "아이디가 없습니다.";
+			var pwt = "패스워드가 없습니다.";
+			document.getElementById("id_r").innerHTML = idt;
+			document.getElementById("pw_r").innerHTML = pwt;
+		} else if(id == ""){
+			// 아이디 값이 없다. -> html로 프린트 해야한다. 
+				var idt = "아이디가 없습니다.";
+				document.getElementById("id_r").innerHTML = idt;
+		} else if(pw == ""){
 			var pwt = "패스워드가 없습니다.";
 			document.getElementById("pw_r").innerHTML = pwt;
 		}
+ 		
+			
 	}
-	
-	
 	
 </script>
 
@@ -171,7 +195,11 @@
 							<div class="lt3"> 
 								<!-- <p><input type="button" value="login" onclick="check1()"></p> -->
 								
-								<p><input id="lt3_b" type="button" value="login" onclick="check3()"></p>
+								<p>
+								<!-- <a href="../index.jsp"> -->
+								<input id="lt3_b" type="button" value="로그인" onclick="check3()">
+								<!-- </a> -->
+								</p>
 								<!-- <p><button onclick="return check2()">login</button></p>  -->
 								<!-- 버튼태그는 검사를 못한다. 버튼태그는 값이 true면 폼을 submit시키는 이벤트가 있으므로, 리턴값을 false로 받으면 폼으로 넘어가지 않는다.  -->
 									
@@ -192,10 +220,13 @@
 						</tr>
 						
 						<tr>
-						<td colspan="4">
-						<div id="id_r">1</div>	
-						<div id="pw_r">1</div>
-						</td>
+							<td colspan="4">
+							<!-- 아이디 비번 확인 창 -->
+							<div id="i_p_check">
+								<div><p id="id_r"></p></div>	
+								<div><p id="pw_r"></p></div>
+							</div>
+							</td>
 						</tr>
 
 						<tr>
@@ -227,7 +258,11 @@
 						<tr class="tt4">
 							<td><input type="submit" value="아이디 찾기"></td>
 							<td class="ttr"><input type="submit" value="비밀번호 찾기"></td>
-							<td><input type="submit" value="회원가입"></td>
+							<td>
+							<a href="join_front.jsp">
+							<input type="button" value="회원가입">
+							</a>
+							</td>
 						</tr>
 
 					</table>

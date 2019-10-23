@@ -105,6 +105,15 @@
 	color: #303030;
 }
 
+.jff2 > input > a {
+	width: 129px;
+	height: 29px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #303030;
+}
+/* a태그 */
+
 .jmt {
 	border-collapse: collapse;
 }

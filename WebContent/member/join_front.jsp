@@ -101,7 +101,7 @@
 						각 회원의 신상정보에 대해서는 “신용정보의 이용 및 보호에 관한 법률”에 의거 완벽한 보안을 유지할 것입니다.<br>
 					</div>
 
-					<form action="./join_main.jsp">
+					<form action="#">
 						<table class="joinft">
 							<tr><td class="jftitle">이용약관(필수)</td></tr>
 							<tr><td><div class="jftxt">
@@ -127,7 +127,7 @@
 										선정한 사람<br> 5) 해지: 이용자가 서비스 개통 후 이용계약을 해약하는 것<br> 6)
 										이용정지: 회사가 정한 일정한 요건에 따라 일정 기간 동안 서비스 이용을 보류하는 것<br>
 									</div></td></tr>
-							<tr><td class="jfc"><input type="checkbox"> 위 내용에 동의합니다.</td></tr>
+							<tr><td class="jfc"><input class="cb" id="cb1" type="checkbox"> 위 내용에 동의합니다.</td></tr>
 
 							<tr><td class="jftitle">개인정보 수집 및 이용동의(필수)</td></tr>
 							<tr><td><div class="jftxt">
@@ -153,7 +153,7 @@
 										선정한 사람<br> 5) 해지: 이용자가 서비스 개통 후 이용계약을 해약하는 것<br> 6)
 										이용정지: 회사가 정한 일정한 요건에 따라 일정 기간 동안 서비스 이용을 보류하는 것<br>
 									</div></td></tr>
-							<tr><td class="jfc"><input type="checkbox"> 위 내용에 동의합니다.</td></tr>
+							<tr><td class="jfc"><input class="cb" id="cb2" type="checkbox"> 위 내용에 동의합니다.</td></tr>
 
 							<tr><td class="jftitle">멤버십 이용약관(필수)</td></tr>
 							<tr><td><div class="jftxt">
@@ -179,13 +179,71 @@
 										선정한 사람<br> 5) 해지: 이용자가 서비스 개통 후 이용계약을 해약하는 것<br> 6)
 										이용정지: 회사가 정한 일정한 요건에 따라 일정 기간 동안 서비스 이용을 보류하는 것<br>
 									</div></td></tr>
-							<tr><td class="jfc"><input type="checkbox"> 위 내용에 동의합니다.</td></tr>
+							<tr><td class="jfc"><input class="cb" id="cb3" type="checkbox"> 위 내용에 동의합니다.</td></tr>
 
-							<tr><td><div class="jff"><input type="checkbox"> 위의 모든 이용약관에 동의합니다.</div></td></tr>
+							<tr><td><div class="jff"><input id="allcb" type="checkbox"> 위의 모든 이용약관에 동의합니다.</div></td></tr>
 							
-							<tr><td class="jff2"><input type="submit" value="다음단계로 이동"></td></tr>
+							<tr><td class="jff2">
+							<!-- <a href="./join_main.jsp"> -->
+							<input id="cbb" type="button" value="다음단계로 이동">
+							<!-- </a> -->
+							</td></tr>
 
 						</table>
+						
+						<script type="text/javascript">
+						
+							var allcb = document.getElementById("allcb");
+							var checkcb = document.getElementsByClassName("cb");
+							var bcb = document.getElementById("cbb");
+							
+/* 							var cb1 = document.getElementById("cb1");
+							var cb2 = document.getElementById("cb2");
+							var cb3 = document.getElementById("cb3"); */
+						
+							allcb.addEventListener("click", function() {
+								for(var i=0; i<checkcb.length; i++){
+									checkcb[i].checked = this.checked;
+								}
+							});
+							
+							for(var i=0; i<checkcb.length; i++){
+								checkcb[i].addEventListener("click", function() {
+									var nc = document.getElementsByClassName("cb");
+									var result = true;
+									
+									for(var j=0; j<nc.length; j++){
+										if(!nc[j].checked){
+											result = false;
+											break;
+										}
+									}
+									allcb.checked = result;
+									
+								});
+								
+/* 								checkcb[i].addEventListener("click", function(){
+									if(this.checked == false){
+										allcb.checked = false;
+									} else if(cb1.checked == true && cb2.checked == true && cb3.checked == true){
+										allcb.checked = true;
+									}
+								}); */
+							}
+							
+							cbb.addEventListener("click", function() {
+								if(allcb.checked){
+									alert("모든 약관에 동의하셨습니다.");
+									location.href = "join_main.jsp";
+								} else {
+									alert("약관에 동의하세요.");
+									location.reload();
+								}
+							});
+
+						</script>
+						
+					
 					</form>
 				</div>
 			</article>

@@ -91,6 +91,8 @@
 	background-color: #ba000e;
 	border-collapse: collapse; 
 	border-spacing: 0px;
+	border: 0;
+	border-style: none;
 }
 
 
@@ -104,6 +106,21 @@
 	font-size: 12px;
 	color: #6f6f6f;
 }
+
+#id_r{
+	font-size: 12px;
+	color: #6f6f6f;
+}
+
+#pw_r{
+	font-size: 12px;
+	color: #6f6f6f;
+}
+
+#i_p_check{
+	height: 30px;
+} 
+
 
 .logint2 {
 	margin-top: 5%;
@@ -142,3 +159,14 @@
 	font-weight: bold;
 	color: #303030;
 }
+
+.tt4 a {
+	width: 117px;
+	height: 29px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #303030;
+}
+
+
+/* a태그 */

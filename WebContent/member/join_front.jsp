@@ -184,9 +184,8 @@
 							<tr><td><div class="jff"><input id="allcb" type="checkbox"> 위의 모든 이용약관에 동의합니다.</div></td></tr>
 							
 							<tr><td class="jff2">
-							<!-- <a href="./join_main.jsp"> -->
 							<input id="cbb" type="button" value="다음단계로 이동">
-							<!-- </a> -->
+							<!-- a태그를 자바스크립트에서 주기 -->
 							</td></tr>
 
 						</table>
@@ -196,17 +195,15 @@
 							var allcb = document.getElementById("allcb");
 							var checkcb = document.getElementsByClassName("cb");
 							var bcb = document.getElementById("cbb");
-							
-/* 							var cb1 = document.getElementById("cb1");
-							var cb2 = document.getElementById("cb2");
-							var cb3 = document.getElementById("cb3"); */
 						
+							//전부체크하거나 전부체크해제하거나
 							allcb.addEventListener("click", function() {
 								for(var i=0; i<checkcb.length; i++){
 									checkcb[i].checked = this.checked;
 								}
 							});
 							
+							//하나체크 할 때 전부에 영향주기
 							for(var i=0; i<checkcb.length; i++){
 								checkcb[i].addEventListener("click", function() {
 									var nc = document.getElementsByClassName("cb");
@@ -219,16 +216,8 @@
 										}
 									}
 									allcb.checked = result;
-									
-								});
 								
-/* 								checkcb[i].addEventListener("click", function(){
-									if(this.checked == false){
-										allcb.checked = false;
-									} else if(cb1.checked == true && cb2.checked == true && cb3.checked == true){
-										allcb.checked = true;
-									}
-								}); */
+								});
 							}
 							
 							cbb.addEventListener("click", function() {

@@ -128,8 +128,8 @@
 								<td class="wt2">방문일자</td>
 								<td class="wt3" colspan="3">
 								<select>
-										<option selected="selected">년도</option>
-										<option>2019년</option>
+										<option id="s_year" selected="selected">년도</option>
+<!-- 									<option>2019년</option>
 										<option>2018년</option>
 										<option>2017년</option>
 										<option>2016년</option>
@@ -138,7 +138,7 @@
 										<option>2013년</option>
 										<option>2012년</option>
 										<option>2011년</option>
-										<option>2010년</option>
+										<option>2010년</option> -->
 								</select> 
 								<select>
 										<option selected="selected">월</option>
@@ -265,6 +265,19 @@
 
 							<tr><td class="wt5" colspan="4"><input type="submit" value="작성완료"></td></tr>
 						</table>
+						
+						<script type="text/javascript">
+						var option = "";
+						var s_year = document.getElementById("s_year");
+						
+						for(var i=2010 ; i<2020 ; i++){
+							op = op + "<option>"+i+"년</option>";
+						}
+						
+						document.getElementById("s_year").innerHTML = op; 
+						
+						</script>
+						
 						
 					</form>
 				</div>

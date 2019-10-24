@@ -9,6 +9,107 @@
 <link href="../css/layout.css" rel="stylesheet">
 <link href="../css/join.css" rel="stylesheet">
 
+<script type="text/javascript">
+window.onload = function() {
+	var name = document.getElementById("jm_t_name");
+	var id = document.getElementById("jm_t_id");
+	var p1 = document.getElementById("jmt_pw_check1");
+	var p2 = document.getElementById("jmt_pw_check2");
+	var ph1 = document.getElementById("jmt_t_p1");
+	var ph2 = document.getElementById("jmt_t_p2");
+	var ph3 = document.getElementById("jmt_t_p3");
+	var br1 = document.getElementById("jmt_t_birth1");
+	var br2 = document.getElementById("jmt_t_birth2");
+	var br3 = document.getElementById("jmt_t_birth3");
+	var must = document.getElementsByClassName("jmust");
+	var write = document.getElementById("jmf_b1");
+	
+	//필수항목 한자리 글자 이상 채우기 + 비밀번호 일치해야함
+	write.addEventListener("click", function() {
+		var jcheck = true;
+		for(var i=0;i<must.length;i++){
+			if(must[i].value.length == ""){
+				jcheck = false;
+			}
+		}
+		
+		if(!jcheck){
+			alert("필수항목을 모두 작성해 주세요");						
+		} else if (p1.value != p2.value) {
+			alert("비밀번호가 일치하지 않습니다.");	
+		} else {
+			location.href="./login.jsp";			
+		}
+		
+	});
+	
+	
+	//아이디 비밀번호 자리수 맞추기
+	id.addEventListener("blur", function() {
+		if(id.value.length < 6){
+			alert("아이디를 6자 이상 입력해주세요");
+		}
+	});
+	
+	p1.addEventListener("blur", function() {
+		if(p1.value.length < 8){
+			alert("비밀번호를 8자 이상 입력해주세요");
+		}
+	});
+	
+	
+	
+	//128줄
+	//비밀번호 중복체크하기
+	var t_box = document.getElementById("t_box");
+	
+	p1.addEventListener("change", function() {
+		p2.value="";
+		t_box.innerHTML = "";
+	});
+	
+	p2.addEventListener("blur", function() {
+		if(p2.value.length > 0){
+			var t = "패스워드가 일치하지 않습니다.";
+			if(p1.value == p2.value){
+				t = "패스워드가 일치합니다.";	
+			}
+		t_box.innerHTML = t;	
+		}
+	});
+	
+	//휴대폰 번호
+	ph3.addEventListener("blur", function() {
+		if(ph1.value.length = 3 && ph2.value.length = 4 && ph3.value.length = 4 ){
+		} else {
+			alert("휴대폰 번호를 바르게 입력하세요.");	
+		}
+	});
+	
+	//생년월일
+	br3.addEventListener("blur", function() {
+		if(br1.value.length != 4 || br2.value.length > 12  || br3.value.length > 31 ){
+		 alert("생년월일을 바르게 입력하세요.");	
+		}
+	});
+	
+	
+	
+	
+	
+	/* 이전페이지 */
+	var jmf_b2 = document.getElementById("jmf_b2");
+	
+	jmf_b2.addEventListener("click", function() {
+		window.history.back();	
+	});
+
+}//window.onload 
+</script>
+
+
+
+
 </head>
 <body>
 	<!-- header -->
@@ -95,13 +196,15 @@
 						
 							<tr style="border-top: 1.7px solid black;">
 								<td class="jmtl">이름</td>
-								<td class="jmtr"><input class="jmt_input" type="text"style="width: 189px;"></td>
+								<td class="jmtr">
+								<input class="jmt_input jmust" id="jm_t_name" type="text"style="width: 189px;">
+								</td>
 							</tr>
 
 							<tr>
 								<td class="jmtl">아이디(필수)</td>
 								<td class="jmtr">
-								<input class="jmt_input" style="float: left; width: 126px;" type="text"> 
+								<input class="jmt_input jmust" id="jm_t_id" style="float: left; width: 126px;" type="text"> 
 								<input class="jmtr_b" style="float: left;" type="submit" value="중복확인">
 								<img src="../img/join/btn_how.gif">
 								</td>
@@ -110,24 +213,29 @@
 							<tr>
 								<td class="jmtl">비밀번호(필수)</td>
 								<td class="jmtr">
-								<input class="jmt_input" type="password" style="float: left; width: 189px;"> 
+								<!-- 자바스크립트 넣을 pw1 -->
+								<input class="jmt_input jmust" id="jmt_pw_check1" type="password" style="float: left; width: 189px;"> 
 								<img src="../img/join/btn_how.gif" style="float: left; padding-left: 3px;">
 								</td>
 							</tr>
 
 							<tr>
 								<td class="jmtl">비밀번호 확인(필수)</td>
-								<td class="jmtr"><input class="jmt_input" type="password"style="width: 189px;"></td>
+								<td class="jmtr">
+								<!-- 자바스크립트 넣을 pw2 -->
+								<input class="jmt_input jmust" id="jmt_pw_check2" type="password" style="width: 189px;">
+								<div id="t_box"></div>
+								
+								</td>
 							</tr>
 
 							<tr>
 								<td class="jmtl">휴대폰 번호(필수)</td>
 								<td class="jmtr">
-								
 									<div style="padding-top: 5px;">
-										<input class="jmt_input" type="text" style="width: 15%;">
-										- <input class="jmt_input" type="text" style="width: 15%;">
-										- <input class="jmt_input" type="text" style="width: 15%;">
+										<input class="jmt_input jmust" id="jm_t_p1" type="text" style="width: 15%;">
+										- <input class="jmt_input jmust" id="jm_t_p2" type="text" style="width: 15%;">
+										- <input class="jmt_input jmust" id="jm_t_p3" type="text" style="width: 15%;">
 										<input class="jmtr_b" type="submit" value="확인">
 									</div>
 
@@ -185,9 +293,9 @@
 								<td class="jmtrf">
 								
 									<div style="padding-top: 7px; padding-bottom: 5px;">
-										<input class="jmtrft" type="text">년 
-										<input class="jmtrft" type="text">월 
-										<input class="jmtrft" type="text">일 
+										<input class="jmtrft jmust" id="jm_t_birth1" type="text">년 
+										<input class="jmtrft jmust"  id="jm_t_birth2" type="text">월 
+										<input class="jmtrft jmust"  id="jm_t_birth3" type="text">일 
 										<input type="radio" name="birth" checked="checked" style="padding-left: 3px;">양력
 										<input type="radio" name="birth">음력
 									</div>
@@ -214,8 +322,10 @@
 							<tr style="text-align: center;">
 								<td colspan="2">
 									<div style="margin-bottom: 12%;">
-										<a href="./login.jsp"> <input id="jmf_b1" type="button" value="가입하기"></a> 
-										<a href="./join_front.jsp"> <input id="jmf_b2" type="submit" value="이전페이지"></a>
+										<input id="jmf_b1" type="button" value="가입하기">
+										<input id="jmf_b2" type="button" value="이전페이지">
+										<!-- 자바스크립트 : window.history.back(); -->
+
 									</div>
 								</td>
 							</tr>

@@ -127,7 +127,7 @@
 							<tr>
 								<td class="wt2">방문일자</td>
 								<td class="wt3" colspan="3">
-								<select id="s_year" onclick="go()" >
+								<select>
 										<option selected="selected">년도</option>
 	 									<option>2019년</option>
 										<option>2018년</option>
@@ -140,6 +140,7 @@
 										<option>2011년</option>
 										<option>2010년</option>
 								</select> 
+								
 								<select>
 										<option selected="selected">월</option>
 										<option>01월</option>

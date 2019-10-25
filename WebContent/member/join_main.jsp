@@ -86,10 +86,20 @@ window.onload = function() {
 		}
 	});
 	
-	ph1.addEventListener("change", function() {
-		
-	}
-
+ 	ph1.addEventListener("change", function() {
+		if(ph1.value.length != 3 || ph2.value.length != 4 || ph3.value.length != 4 ){
+			alert("휴대폰 번호를 바르게 입력하세요.");	
+		}
+	});
+ 	
+ 	ph2.addEventListener("change", function() {
+		if(ph1.value.length != 3 || ph2.value.length != 4 || ph3.value.length != 4 ){
+			alert("휴대폰 번호를 바르게 입력하세요.");	
+		}
+	});
+ 	
+ 	/* 확인버튼 클릭하면 문제제기하자 */
+ 
 
 	
 	//생년월일

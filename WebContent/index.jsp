@@ -8,8 +8,42 @@
 <link href="./css/reset.css" rel="stylesheet">
 <link href="./css/layout.css" rel="stylesheet">
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script> 
+	$(document).ready(function() {
+		$(".h_m").mouseenter(function() {
+			$("#panel").slideDown(650);
+			$(".h_m_l").each(function() {
+				for(var i=0;i<7;i++){
+					$(".h_m_l["+i+"]").prop("src",'/Html_ex2/img/h_b/white/gnb_0'+(i+1)+'_on.png');				
+				}
+		});
+		
+		});
+
+		$(".h_m").mouseleave(function() {
+			$("#panel").slideUp(650);
+		});
+		
+		
+		
+	});
+	
+	
+	
+</script>
+<style> 
+/* 자바스크립트 넣기 */
+/* 1. 그림 */
+/* 2. 메뉴 mouseenter 하면 img src 바뀌기 / 글씨 생기기 */
+/* 3. panel mouseleave하면 창 꺼지기 */
+
+</style>
+
 </head>
 <body>
+
+<div id="flip">Click to slide down panel</div>
 
 	<!-- header -->
 	<header>
@@ -46,13 +80,13 @@
 			</div>
 
 			<div class="header_menu">
-				<ul>
-					<li><a href="#"><img src="/Html_ex2/img/h_b/black/gnb_01.png"></a></li>
-					<li><a href="#"><img src="/Html_ex2/img/h_b/black/gnb_02.png"></a></li>
-					<li><a href="#"><img src="/Html_ex2/img/h_b/black/gnb_03.png"></a></li>
-					<li><a href="#"><img src="/Html_ex2/img/h_b/black/gnb_04.png"></a></li>
-					<li><a href="#"><img src="/Html_ex2/img/h_b/black/gnb_05.png"></a></li>
-					<li><a href="#"><img src="/Html_ex2/img/h_b/black/gnb_06.png"></a></li>
+				<ul class="h_m">
+					<li><a href="#"><img class="h_m_l" src="/Html_ex2/img/h_b/black/gnb_01.png"></a></li>
+					<li><a href="#"><img class="h_m_l" src="/Html_ex2/img/h_b/black/gnb_02.png"></a></li>
+					<li><a href="#"><img class="h_m_l" src="/Html_ex2/img/h_b/black/gnb_03.png"></a></li>
+					<li><a href="#"><img class="h_m_l" src="/Html_ex2/img/h_b/black/gnb_04.png"></a></li>
+					<li><a href="#"><img class="h_m_l" src="/Html_ex2/img/h_b/black/gnb_05.png"></a></li>
+					<li><a href="#"><img class="h_m_l" src="/Html_ex2/img/h_b/black/gnb_06.png"></a></li>
 				</ul>
 			</div>
 			
@@ -61,6 +95,58 @@
 
 	<!-- section -->
 	<section class="main">
+
+		<div id="panel">
+			Hello world!
+			<div>
+				<ul>
+					<li>New menu</li>
+					<li>COFFEE</li>
+					<li>라떼 · 초콜릿 · 티</li>
+					<li>할리치노 · 빙수</li>
+					<li>스파클링 · 아이스티</li>
+					<li>베이커리·스낵MD</li>
+					<li>MD상품</li>
+					<li>MD원두</li>
+				</ul>
+
+				<ul>
+					<li>할리스콘</li>
+					<li>할리스 기프트카드</li>
+				</ul>
+
+				<ul>
+					<li>스마트 오더 서비스안내</li>
+					<li>멤버십 혜택안내</li>
+				</ul>
+
+				<ul>
+					<li>Notice</li>
+					<li>Event</li>
+				</ul>
+
+				<ul>
+					<li>국내</li>
+					<li>해외</li>
+				</ul>
+
+				<ul>
+					<li>HOLLYS Coffee</li>
+					<li>About Coffee</li>
+					<li>CSR</li>
+					<li>Gallery</li>
+					<li>혜택 안내</li>
+					<li>본사 위치</li>
+					<li>채용 안내</li>
+					<li>가맹 개설안내</li>
+					<li>B2B 사업 소개</li>
+				</ul>
+
+
+			</div>
+		</div>
+
+
 		<article class="main1">
 			<img src="/Html_ex2/img/s/body.jpg">
 		</article>

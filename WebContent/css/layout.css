@@ -72,10 +72,35 @@ header {
 	min-height: 800px;
 	margin: 0 auto;
 	margin-bottom: 20px;
-	background-color: white;
+	/* background-color: white; */
 	border-top: 2px #ba000e solid;
 	overflow: hidden;
 }
+
+#panel {
+	width: 100%;
+	height: 279px;
+	padding: 5px;
+	position: absolute;
+	color:#6f6f6f;
+	font-size:13px;
+	background-color: #4f4c4b;
+	display: none;
+}
+
+#panel > div{
+	width: 55%;
+	margin: 0 auto;
+}
+
+#panel ul{
+	width: 16.667%;
+	float: left;
+	text-align: center;
+}
+
+/* #panel li {
+} */
 
 .main1 {
 	width: 100%;

@@ -15,12 +15,12 @@ window.onload = function() {
 	var id = document.getElementById("jm_t_id");
 	var p1 = document.getElementById("jmt_pw_check1");
 	var p2 = document.getElementById("jmt_pw_check2");
-	var ph1 = document.getElementById("jmt_t_p1");
-	var ph2 = document.getElementById("jmt_t_p2");
-	var ph3 = document.getElementById("jmt_t_p3");
-	var br1 = document.getElementById("jmt_t_birth1");
-	var br2 = document.getElementById("jmt_t_birth2");
-	var br3 = document.getElementById("jmt_t_birth3");
+	var ph1 = document.getElementById("jm_t_p1");
+	var ph2 = document.getElementById("jm_t_p2");
+	var ph3 = document.getElementById("jm_t_p3");
+	var br1 = document.getElementById("jm_t_birth1");
+	var br2 = document.getElementById("jm_t_birth2");
+	var br3 = document.getElementById("jm_t_birth3");
 	var must = document.getElementsByClassName("jmust");
 	var write = document.getElementById("jmf_b1");
 	
@@ -49,6 +49,7 @@ window.onload = function() {
 		if(id.value.length < 6){
 			alert("아이디를 6자 이상 입력해주세요");
 		}
+
 	});
 	
 	p1.addEventListener("blur", function() {
@@ -80,16 +81,22 @@ window.onload = function() {
 	
 	//휴대폰 번호
 	ph3.addEventListener("blur", function() {
-		if(ph1.value.length = 3 && ph2.value.length = 4 && ph3.value.length = 4 ){
-		} else {
+		if(ph1.value.length != 3 || ph2.value.length != 4 || ph3.value.length != 4 ){
 			alert("휴대폰 번호를 바르게 입력하세요.");	
 		}
 	});
 	
+	ph1.addEventListener("change", function() {
+		
+	}
+
+
+	
 	//생년월일
 	br3.addEventListener("blur", function() {
-		if(br1.value.length != 4 || br2.value.length > 12  || br3.value.length > 31 ){
-		 alert("생년월일을 바르게 입력하세요.");	
+		if(br1.value.length == 4 || br2.value < 13  || br3.value < 32 ){
+		} else {			
+			 alert("생년월일을 바르게 입력하세요.");	
 		}
 	});
 	

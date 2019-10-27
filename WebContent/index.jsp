@@ -4,46 +4,68 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <title>HOLLYS Coffee</title>
 <link href="./css/reset.css" rel="stylesheet">
 <link href="./css/layout.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script> 
-	$(document).ready(function() {
-		$(".h_m").mouseenter(function() {
-			$("#panel").slideDown(650);
-			$(".h_m_l").each(function() {
-				for(var i=0;i<7;i++){
-					$(".h_m_l["+i+"]").prop("src",'/Html_ex2/img/h_b/white/gnb_0'+(i+1)+'_on.png');				
-				}
-		});
-		
-		});
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-		$(".h_m").mouseleave(function() {
-			$("#panel").slideUp(650);
+	<script>
+
+		$(document).ready(function() {
+
+ 			$(".h_m").mouseenter(function() {
+				$('#panel_m').slideDown(650);
+				
+				var imag = $(".h_m_img");
+				
+				
+				for (var i=0; i<imag.length;i++){	
+					imag[i].src = '/Html_ex2/img/h_b/white/gnb_0' + (i+1) + '_on.png';
+					
+				} 
+			}); 
+			
+
+			$(".h_m").mouseleave(function() {
+				$("#panel_m").slideUp(650);
+				
+				var imag = $(".h_m_img");
+				
+				for (var i=0; i<imag.length;i++){	
+					imag[i].src = '/Html_ex2/img/h_b/black/gnb_0' + (i+1) + '.png'; 
+				} 
+			});
+
 		});
-		
-		
-		
-	});
-	
-	
-	
-</script>
+	</script>
+
 <style> 
 /* 자바스크립트 넣기 */
 /* 1. 그림 */
 /* 2. 메뉴 mouseenter 하면 img src 바뀌기 / 글씨 생기기 */
 /* 3. panel mouseleave하면 창 꺼지기 */
 
+.carousel-indicators li{
+	background-color: #e1e1e0;
+	border: 0px;
+	font-size: 11px;
+}
+
+.carousel-indicators li:hover{
+ 	background-color: #a42228;
+	border: 0px;
+	font-size: 11px;
+}
+
 </style>
 
 </head>
 <body>
-
-<div id="flip">Click to slide down panel</div>
 
 	<!-- header -->
 	<header>
@@ -80,13 +102,13 @@
 			</div>
 
 			<div class="header_menu">
-				<ul class="h_m">
-					<li><a href="#"><img class="h_m_l" src="/Html_ex2/img/h_b/black/gnb_01.png"></a></li>
-					<li><a href="#"><img class="h_m_l" src="/Html_ex2/img/h_b/black/gnb_02.png"></a></li>
-					<li><a href="#"><img class="h_m_l" src="/Html_ex2/img/h_b/black/gnb_03.png"></a></li>
-					<li><a href="#"><img class="h_m_l" src="/Html_ex2/img/h_b/black/gnb_04.png"></a></li>
-					<li><a href="#"><img class="h_m_l" src="/Html_ex2/img/h_b/black/gnb_05.png"></a></li>
-					<li><a href="#"><img class="h_m_l" src="/Html_ex2/img/h_b/black/gnb_06.png"></a></li>
+				<ul class="h_m" >
+					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_01.png"></a></li>
+					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_02.png"></a></li>
+					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_03.png"></a></li>
+					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_04.png"></a></li>
+					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_05.png"></a></li>
+					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_06.png"></a></li>
 				</ul>
 			</div>
 			
@@ -95,9 +117,8 @@
 
 	<!-- section -->
 	<section class="main">
-
-		<div id="panel">
-			Hello world!
+		<article class="main1">
+		<div id="panel_m">
 			<div>
 				<ul>
 					<li>New menu</li>
@@ -145,11 +166,40 @@
 
 			</div>
 		</div>
+			<!-- <img src="/Html_ex2/img/s/body.jpg"> -->
+
+			 <div id="main_img" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators" style="margin-bottom: 0px;">
+					<li data-target="#main_img" data-slide-to="0" class="active"></li>
+					<li data-target="#main_img" data-slide-to="1"></li>
+					<li data-target="#main_img" data-slide-to="2"></li>
+					<li data-target="#main_img" data-slide-to="3"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<img src="./img/s/main1.jpg">
+					</div>
+
+					<div class="item">
+						<img src="./img/s/main2.jpg">
+					</div>
+
+					<div class="item">
+						<img src="./img/s/main3.jpg">
+					</div>
+
+					<div class="item">
+						<img src="./img/s/main4.jpg">
+					</div>
+				</div>
+
+			</div>
 
 
-		<article class="main1">
-			<img src="/Html_ex2/img/s/body.jpg">
-		</article>
+		</article>n<!-- main1 -->
 
 		<article class="main2">
 			<div class="main2_wrap">
@@ -204,9 +254,11 @@
 			<div class="main4_wrap">
 				
 				<div class="m4">
+					<div>
 					<img src="./img/s/academy_tit.gif"> <br>
 					<div class="m4p">할리스커피 아카데미와 함께하는 즐거운 커피 여행!</div>
 					<br> <span><img src="./img/s/ico_arrow.gif">바로가기</span>
+					</div>
 				</div>
 				
 				<div class="m4">

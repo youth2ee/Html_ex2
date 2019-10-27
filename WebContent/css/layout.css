@@ -72,45 +72,49 @@ header {
 	min-height: 800px;
 	margin: 0 auto;
 	margin-bottom: 20px;
-	/* background-color: white; */
 	border-top: 2px #ba000e solid;
 	overflow: hidden;
 }
 
-#panel {
+#panel_m {
 	width: 100%;
 	height: 279px;
-	padding: 5px;
+	padding-top:17px;
 	position: absolute;
-	color:#6f6f6f;
+	color:#808080;
 	font-size:13px;
 	background-color: #4f4c4b;
 	display: none;
+	z-index: 1;
 }
 
-#panel > div{
+#panel_m > div{
 	width: 55%;
 	margin: 0 auto;
 }
 
-#panel ul{
+#panel_m ul{
 	width: 16.667%;
 	float: left;
 	text-align: center;
 }
 
-/* #panel li {
-} */
+#panel_m li {
+	padding-top: 6px;
+}   
 
 .main1 {
 	width: 100%;
 	margin-bottom: 50px;
 }
 
-.main1 img {
+
+/* 메인 이미지 부트스트랩 */
+.item img{
 	width: 100%;
 }
 
+/* 메인 이미지 부트스트랩 끝 */
 .main2 {
 	width: 55%;
 	margin: 0 auto;
@@ -228,7 +232,7 @@ header {
 }
 
 .m4 {
-	width: 23%;
+	width: 25%;
 	float: left;
 	padding-left: 1%;
 	padding-right: 1%;

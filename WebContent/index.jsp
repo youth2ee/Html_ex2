@@ -18,20 +18,20 @@
 
 		$(document).ready(function() {
 
- 			$(".h_m").mouseenter(function() {
-				$('#panel_m').slideDown(650);
-				
+ 			/* $(".h_m").mouseenter(function() { */
 				var imag = $(".h_m_img");
+ 				
+ 			$("#h_m_li1").mouseenter(function() {
+				$('#panel_m').slideDown(650);				
+				imag[0].src = '/Html_ex2/img/h_b/white/gnb_0' + 1 + '_on.png';
 				
-				
-				for (var i=0; i<imag.length;i++){	
+				/* for (var i=0; i<imag.length;i++){	
 					imag[i].src = '/Html_ex2/img/h_b/white/gnb_0' + (i+1) + '_on.png';
-					
-				} 
+				}  */
 			}); 
 			
 
-			$(".h_m").mouseleave(function() {
+/* 			$(".h_m").mouseleave(function() {
 				$("#panel_m").slideUp(650);
 				
 				var imag = $(".h_m_img");
@@ -39,7 +39,7 @@
 				for (var i=0; i<imag.length;i++){	
 					imag[i].src = '/Html_ex2/img/h_b/black/gnb_0' + (i+1) + '.png'; 
 				} 
-			});
+			}); */
 
 		});
 	</script>
@@ -103,10 +103,10 @@
 
 			<div class="header_menu">
 				<ul class="h_m" >
-					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_01.png"></a></li>
+					<li class="h_m_l" id="h_m_li1"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_01.png"></a></li>
 					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_02.png"></a></li>
 					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_03.png"></a></li>
-					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_04.png"></a></li>
+					<li class="h_m_l"><a href="/Html_ex2/write/notice.jsp"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_04.png"></a></li>
 					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_05.png"></a></li>
 					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_06.png"></a></li>
 				</ul>

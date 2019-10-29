@@ -93,21 +93,6 @@
 				  },
 				});
  			
- 		
-			
-				/* for (var i=0; i<imag.length;i++){	
-					imag[i].src = '/Html_ex2/img/h_b/white/gnb_0' + (i+1) + '_on.png';
-				}  */
-
-/* 			$(".h_m").mouseleave(function() {
-				$("#panel_m").slideUp(650);
-				
-				var imag = $(".h_m_img");
-				
-				for (var i=0; i<imag.length;i++){	
-					imag[i].src = '/Html_ex2/img/h_b/black/gnb_0' + (i+1) + '.png'; 
-				} 
-			}); */
 
 		});
 	</script>

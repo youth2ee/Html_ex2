@@ -161,7 +161,7 @@
 								<td colspan="4">
 								<div>
 									<div class="nt3_d"><img src="../img/write/btn_prev01.gif"></div>
-									<div class="nt3_d2"> 1 2 3 4 5 </div>
+									<div class="nt3_d2" style="line-height:1;vertical-align: middle; height: 30px;"> 1 2 3 4 5 </div>
 									<div class="nt3_d"><img src="../img/write/btn_next02.gif"></div>
 								</div>
 								</td>

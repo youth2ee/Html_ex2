@@ -18,18 +18,86 @@
 
 		$(document).ready(function() {
 
- 			/* $(".h_m").mouseenter(function() { */
-				var imag = $(".h_m_img");
- 				
- 			$("#h_m_li1").mouseenter(function() {
-				$('#panel_m').slideDown(650);				
-				imag[0].src = '/Html_ex2/img/h_b/white/gnb_0' + 1 + '_on.png';
-				
+			var imag = $(".h_m_img");
+			var list = $(".h_m_l");
+			
+ 			$(list[0]).on({
+ 				  mouseenter: function(){
+ 					$('#panel_m').slideDown(650);				
+ 					imag[0].src = '/Html_ex2/img/h_b/white/gnb_01_on.png';
+ 				  },
+
+ 				  mouseleave: function(){
+ 					$("#panel_m").slideUp(650);
+ 					imag[0].src = '/Html_ex2/img/h_b/black/gnb_01.png';
+ 				  },
+ 				});
+ 			
+ 			$(list[1]).on({
+				  mouseenter: function(){
+					$('#panel_m').slideDown(650);				
+					imag[1].src = '/Html_ex2/img/h_b/white/gnb_02_on.png';
+				  },
+
+				  mouseleave: function(){
+					$("#panel_m").slideUp(650);
+					imag[1].src = '/Html_ex2/img/h_b/black/gnb_02.png';
+				  },
+				});
+ 			
+ 			$(list[2]).on({
+				  mouseenter: function(){
+					$('#panel_m').slideDown(650);				
+					imag[2].src = '/Html_ex2/img/h_b/white/gnb_03_on.png';
+				  },
+
+				  mouseleave: function(){
+					$("#panel_m").slideUp(650);
+					imag[2].src = '/Html_ex2/img/h_b/black/gnb_03.png';
+				  },
+				});
+ 			
+ 			$(list[3]).on({
+				  mouseenter: function(){
+					$('#panel_m').slideDown(650);				
+					imag[3].src = '/Html_ex2/img/h_b/white/gnb_04_on.png';
+				  },
+
+				  mouseleave: function(){
+					$("#panel_m").slideUp(650);
+					imag[3].src = '/Html_ex2/img/h_b/black/gnb_04.png';
+				  },
+				});
+ 			
+ 			$(list[4]).on({
+				  mouseenter: function(){
+					$('#panel_m').slideDown(650);				
+					imag[4].src = '/Html_ex2/img/h_b/white/gnb_05_on.png';
+				  },
+
+				  mouseleave: function(){
+					$("#panel_m").slideUp(650);
+					imag[4].src = '/Html_ex2/img/h_b/black/gnb_05.png';
+				  },
+				});
+ 			
+ 			$(list[5]).on({
+				  mouseenter: function(){
+					$('#panel_m').slideDown(650);				
+					imag[5].src = '/Html_ex2/img/h_b/white/gnb_06_on.png';
+				  },
+
+				  mouseleave: function(){
+					$("#panel_m").slideUp(650);
+					imag[5].src = '/Html_ex2/img/h_b/black/gnb_06.png';
+				  },
+				});
+ 			
+ 		
+			
 				/* for (var i=0; i<imag.length;i++){	
 					imag[i].src = '/Html_ex2/img/h_b/white/gnb_0' + (i+1) + '_on.png';
 				}  */
-			}); 
-			
 
 /* 			$(".h_m").mouseleave(function() {
 				$("#panel_m").slideUp(650);

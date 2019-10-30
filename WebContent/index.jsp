@@ -135,15 +135,9 @@
 
 				<div class="ht2">
 					<ul>
-						<li><a href="/Html_ex2/member/login.jsp"> 
-						<img src="/Html_ex2/img/h_t/4.jpg"></a>
-						</li>
-						<li><a href="/Html_ex2/member/join_front.jsp"> 
-						<img src="/Html_ex2/img/h_t/5.jpg"></a>
-						</li>
-						<li id=ht2_3><a href="/Html_ex2/write/write.jsp"> 
-						<img src="/Html_ex2/img/h_t/6.jpg"></a>
-						</li>
+						<li><a href="/Html_ex2/member/login.jsp"><img src="/Html_ex2/img/h_t/4.jpg"></a></li>
+						<li><a href="/Html_ex2/member/join_front.jsp"><img src="/Html_ex2/img/h_t/5.jpg"></a></li>
+						<li id=ht2_3><a href="/Html_ex2/write/write.jsp"><img src="/Html_ex2/img/h_t/6.jpg"></a></li>
 						<li><img src="/Html_ex2/img/h_t/7.jpg"></li>
 						<li><img src="/Html_ex2/img/h_t/8.jpg"></li>
 					</ul>

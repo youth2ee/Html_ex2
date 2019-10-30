@@ -9,14 +9,119 @@
 <link href="../css/layout.css" rel="stylesheet">
 <link href="../css/write.css" rel="stylesheet">
 
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<script>
+
+		$(document).ready(function() {
+
+			var imag = $(".h_m_img");
+			var list = $(".h_m_l");
+			
+ 			$(list[0]).on({
+ 				  mouseenter: function(){
+ 					$('#panel_m').slideDown(650);				
+ 					imag[0].src = '/Html_ex2/img/h_b/white/gnb_01_on.png';
+ 				  },
+
+ 				  mouseleave: function(){
+ 					$("#panel_m").slideUp(650);
+ 					imag[0].src = '/Html_ex2/img/h_b/black/gnb_01.png';
+ 				  },
+ 				});
+ 			
+ 			$(list[1]).on({
+				  mouseenter: function(){
+					$('#panel_m').slideDown(650);				
+					imag[1].src = '/Html_ex2/img/h_b/white/gnb_02_on.png';
+				  },
+
+				  mouseleave: function(){
+					$("#panel_m").slideUp(650);
+					imag[1].src = '/Html_ex2/img/h_b/black/gnb_02.png';
+				  },
+				});
+ 			
+ 			$(list[2]).on({
+				  mouseenter: function(){
+					$('#panel_m').slideDown(650);				
+					imag[2].src = '/Html_ex2/img/h_b/white/gnb_03_on.png';
+				  },
+
+				  mouseleave: function(){
+					$("#panel_m").slideUp(650);
+					imag[2].src = '/Html_ex2/img/h_b/black/gnb_03.png';
+				  },
+				});
+ 			
+ 			$(list[3]).on({
+				  mouseenter: function(){
+					$('#panel_m').slideDown(650);				
+					imag[3].src = '/Html_ex2/img/h_b/white/gnb_04_on.png';
+				  },
+
+				  mouseleave: function(){
+					$("#panel_m").slideUp(650);
+					imag[3].src = '/Html_ex2/img/h_b/black/gnb_04.png';
+				  },
+				});
+ 			
+ 			$(list[4]).on({
+				  mouseenter: function(){
+					$('#panel_m').slideDown(650);				
+					imag[4].src = '/Html_ex2/img/h_b/white/gnb_05_on.png';
+				  },
+
+				  mouseleave: function(){
+					$("#panel_m").slideUp(650);
+					imag[4].src = '/Html_ex2/img/h_b/black/gnb_05.png';
+				  },
+				});
+ 			
+ 			$(list[5]).on({
+				  mouseenter: function(){
+					$('#panel_m').slideDown(650);				
+					imag[5].src = '/Html_ex2/img/h_b/white/gnb_06_on.png';
+				  },
+
+				  mouseleave: function(){
+					$("#panel_m").slideUp(650);
+					imag[5].src = '/Html_ex2/img/h_b/black/gnb_06.png';
+				  },
+				});
+ 			
+
+		});
+	</script>
+
+<style> 
+
+
+.carousel-indicators li{
+	background-color: #e1e1e0;
+	border: 0px;
+	font-size: 11px;
+}
+
+.carousel-indicators li:hover{
+ 	background-color: #a42228;
+	border: 0px;
+	font-size: 11px;
+}
+
+</style>
+
+
 </head>
 <body>
 	<!-- header -->
 	<header>
 		<div class="header_wrap">
-
+		
 			<div class="header_top">
-			
 				<div class="ht1">
 					<ul>
 						<li><img src="/Html_ex2/img/h_t/1.jpg"></li>
@@ -27,14 +132,13 @@
 
 				<div class="ht2">
 					<ul>
-						<li><a href="/Html_ex2/member/login.jsp"> <img src="/Html_ex2/img/h_t/4.jpg"></a></li>
-						<li><a href="/Html_ex2/member/join_front.jsp"> <img src="/Html_ex2/img/h_t/5.jpg"></a></li>
-						<li><a href="/Html_ex2/write/write.jsp"> <img src="/Html_ex2/img/h_t/6.jpg"></a></li>
+						<li><a href="/Html_ex2/member/login.jsp"><img src="/Html_ex2/img/h_t/4.jpg"></a></li>
+						<li><a href="/Html_ex2/member/join_front.jsp"><img src="/Html_ex2/img/h_t/5.jpg"></a></li>
+						<li id=ht2_3><a href="/Html_ex2/write/write.jsp"><img src="/Html_ex2/img/h_t/6.jpg"></a></li>
 						<li><img src="/Html_ex2/img/h_t/7.jpg"></li>
 						<li><img src="/Html_ex2/img/h_t/8.jpg"></li>
 					</ul>
 				</div>
-				
 			</div>
 
 			<div class="ht_logo">
@@ -42,22 +146,71 @@
 			</div>
 
 			<div class="header_menu">
-				<ul>
-					<li><a href="#"><img src="/Html_ex2/img/h_b/black/gnb_01.png"></a></li>
-					<li><a href="#"><img src="/Html_ex2/img/h_b/black/gnb_02.png"></a></li>
-					<li><a href="#"><img src="/Html_ex2/img/h_b/black/gnb_03.png"></a></li>
-					<li><a href="#"><img src="/Html_ex2/img/h_b/black/gnb_04.png"></a></li>
-					<li><a href="#"><img src="/Html_ex2/img/h_b/black/gnb_05.png"></a></li>
-					<li><a href="#"><img src="/Html_ex2/img/h_b/black/gnb_06.png"></a></li>
+				<ul class="h_m" >
+					<li class="h_m_l" id="h_m_li1"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_01.png"></a></li>
+					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_02.png"></a></li>
+					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_03.png"></a></li>
+					<li class="h_m_l"><a href="/Html_ex2/write/notice.jsp"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_04.png"></a></li>
+					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_05.png"></a></li>
+					<li class="h_m_l"><a href="#"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_06.png"></a></li>
 				</ul>
 			</div>
-
+			
 		</div>
 	</header>
 
 
+
 	<!-- section -->
 	<section class="main">
+	<div id="panel_m">
+			<div>
+				<ul>
+					<li>New menu</li>
+					<li>COFFEE</li>
+					<li>라떼 · 초콜릿 · 티</li>
+					<li>할리치노 · 빙수</li>
+					<li>스파클링 · 아이스티</li>
+					<li>베이커리·스낵MD</li>
+					<li>MD상품</li>
+					<li>MD원두</li>
+				</ul>
+
+				<ul>
+					<li>할리스콘</li>
+					<li>할리스 기프트카드</li>
+				</ul>
+
+				<ul>
+					<li>스마트 오더 서비스안내</li>
+					<li>멤버십 혜택안내</li>
+				</ul>
+
+				<ul>
+					<li>Notice</li>
+					<li>Event</li>
+				</ul>
+
+				<ul>
+					<li>국내</li>
+					<li>해외</li>
+				</ul>
+
+				<ul>
+					<li>HOLLYS Coffee</li>
+					<li>About Coffee</li>
+					<li>CSR</li>
+					<li>Gallery</li>
+					<li>혜택 안내</li>
+					<li>본사 위치</li>
+					<li>채용 안내</li>
+					<li>가맹 개설안내</li>
+					<li>B2B 사업 소개</li>
+				</ul>
+
+
+			</div>
+		</div>
 		<div class="writemain">
 		
 			<article class="write1">
@@ -240,8 +393,7 @@
 
 							<tr>
 								<td class="wt2">첨부파일</td>
-								<td class="wt2file" colspan="3"><input type="file"><br> 
-								※ 업로드 제한 사이즈 : 10MB※ 업로드 가능 확장자 : jpg, jpeg, png, gif</td>
+								<td class="wt2file" colspan="3"><input type="file">※ 업로드 제한 사이즈 : 10MB※ 업로드 가능 확장자 : jpg, jpeg, png, gif</td>
 							</tr>
 
 							<tr>

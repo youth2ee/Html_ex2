@@ -247,70 +247,8 @@
 
 </head>
 <body>
-		<!-- header -->
-	<header>
-		<div class="header_wrap">
-		
-			<div class="header_top">
-				<div class="ht1">
-					<ul>
-						<li><img src="/Html_ex2/img/h_t/1.jpg"></li>
-						<li><img src="/Html_ex2/img/h_t/2.jpg"></li>
-						<li><img src="/Html_ex2/img/h_t/3.jpg"></li>
-					</ul>
-				</div>
 
-				<div class="ht2">
-					<ul>
-						<li><a href="/Html_ex2/member/login.jsp"><img src="/Html_ex2/img/h_t/4.jpg"></a></li>
-						<li><a href="/Html_ex2/member/join_front.jsp"><img src="/Html_ex2/img/h_t/5.jpg"></a></li>
-						<li id=ht2_3><a href="/Html_ex2/write/write.jsp"><img src="/Html_ex2/img/h_t/6.jpg"></a></li>
-						<li><img src="/Html_ex2/img/h_t/7.jpg"></li>
-						<li><img src="/Html_ex2/img/h_t/8.jpg"></li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="ht_logo">
-				<a href="/Html_ex2/index.jsp"><img src="/Html_ex2/img/logo.gif"></a>
-			</div>
-
-			<div class="header_menu">
-				<ul class="h_m" >
-					<li class="h_m_l">
-					<a href="#" class="aaa"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_01.png"></a>
-					<div class="h_m_l_div"></div>
-					</li>
-					
-					<li class="h_m_l">
-					<a href="#" class="aaa"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_02.png"></a>
-					<div class="h_m_l_div"></div>
-					</li>
-					
-					<li class="h_m_l">
-					<a href="#" class="aaa"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_03.png"></a>
-					<div class="h_m_l_div"></div>
-					</li>
-					
-					<li class="h_m_l">
-					<a href="/Html_ex2/write/notice.jsp" class="aaa"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_04.png"></a>
-					<div class="h_m_l_div"></div>
-					</li>
-					
-					<li class="h_m_l">
-					<a href="#" class="aaa"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_05.png"></a>
-					<div class="h_m_l_div"></div>
-					</li>
-					
-					<li class="h_m_l">
-					<a href="#" class="aaa"><img class="h_m_img" src="/Html_ex2/img/h_b/black/gnb_06.png"></a>
-					<div class="h_m_l_div"></div>
-					</li>
-				</ul>
-			</div>
-			
-		</div>
-	</header>
+<%@ include file="../layout/header.jsp" %>
 	
 	<!-- section -->
 	<section class="main">
@@ -538,39 +476,9 @@
 
 		</div>
 	</section>
-
-
-
-
-	<!-- footer -->
-	<footer>
-		<div class="footer_wrap">
-			<div class="footer_info_1">
-				<ul>
-					<li>개인정보처리방침 |</li>
-					<li>서비스이용약관 |</li>
-					<li>멤버십이용약관 |</li>
-					<li>고객문의 |</li>
-					<li>고객설문 |</li>
-					<li>BI |</li>
-					<li>소개 |</li>
-				</ul>
-			</div>
-
-			<div class="footer_info_2">
-
-				법인명: (주) 할리스에프앤비 대표자: 김유진 사업자등록번호 211-87-61044 통신판매업:
-				제2019-서울종로-0193호<br> 주소 : 서울특별시 종로구 율곡로 88 삼환빌딩 8층 (운니동) 대표전화 :
-				02-2188-7100 (가맹문의 : 1670-4432)<br> COPYRIGHT (C) HOLLYS
-				COFFEECo., Ltd. All Rights Reserved.<br>
-
-
-			</div>
-		</div>
-	</footer>
-
-
-
+	
+	
+<%@ include file="../layout/footer.jsp" %>
 
 </body>
 </html>

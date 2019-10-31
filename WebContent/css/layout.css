@@ -3,7 +3,6 @@
 /* header */
 header {
 	width: 100%;
-	color: white;
 }
 
 .header_wrap {
@@ -58,12 +57,26 @@ header {
 	width: 16.667%;
 	float: left;
 	text-align: center;
-	line-height: 50px;
 }
+
 
 .header_menu li:hover {
 	background-color: #ba000c;
 }
+
+.aaa{
+	line-height: 35px;
+}
+ .h_m_l_div{
+	width: 100%;
+	height : 20px;
+/* 	color: #ffffff; */
+	font-size: 11px;
+	margin: 0 auto;
+	padding-top: 0;
+	margin-top: 0;
+} 
+
 
 /* main */
 .main {

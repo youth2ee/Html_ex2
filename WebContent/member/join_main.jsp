@@ -155,7 +155,6 @@
 			if (id.value.length < 6) {
 				alert("아이디를 6자 이상 입력해주세요");
 			}
-
 		});
 
 		p1.addEventListener("blur", function() {
@@ -185,31 +184,44 @@
 
 		//휴대폰 번호
 		ph3.addEventListener("blur", function() {
-			if (ph1.value.length != 3 || ph2.value.length != 4
-					|| ph3.value.length != 4) {
+			if (ph1.value.length != 3 || ph2.value.length != 4 || ph3.value.length != 4) {
 				alert("휴대폰 번호를 바르게 입력하세요.");
+			} else {
+
+			$("#jm_t_p4").val($("#jm_t_p1").val() +'-'+ $("#jm_t_p2").val() +'-'+ $("#jm_t_p3").val());
+
 			}
 		});
 
-		ph1.addEventListener("change", function() {
-			if (ph1.value.length != 3 || ph2.value.length != 4
-					|| ph3.value.length != 4) {
+ 		ph1.addEventListener("change", function() {
+			if (ph1.value.length != 3) {
 				alert("휴대폰 번호를 바르게 입력하세요.");
 			}
 		});
 
 		ph2.addEventListener("change", function() {
-			if (ph1.value.length != 3 || ph2.value.length != 4
-					|| ph3.value.length != 4) {
+			if (ph2.value.length != 4) {
 				alert("휴대폰 번호를 바르게 입력하세요.");
 			}
 		});
 
 		/* 확인버튼 클릭하면 문제제기하자 */
+		
+		//이메일
+		$("#jm_t_e2").blur(function() {
+			$("#jm_t_e3").val( $("#jm_t_e1").val() +'@'+  $("#jm_t_e2").val() );
+		});
+		
+		//주소
+		$("#jm_t_a2").blur(function() {
+			$("#jm_t_a3").val( $("#jm_t_a1").val() +  $("#jm_t_a2").val() );
+		});
+
 
 		//생년월일
 		br3.addEventListener("blur", function() {
 			if (br1.value.length == 4 || br2.value < 13 || br3.value < 32) {
+				$("#jm_t_birth4").val( $("#jm_t_birth1").val() +'-'+  $("#jm_t_birth2").val() +'-'+ $("#jm_t_birth3").val() );
 			} else {
 				alert("생년월일을 바르게 입력하세요.");
 			}
@@ -221,7 +233,8 @@
 		jmf_b2.addEventListener("click", function() {
 			window.history.back();
 		});
-
+		
+		
 	}//window.onload
 </script>
 
@@ -282,20 +295,20 @@
 						<li class="jf2_1_4"><img src="../img/join/stit_util06.gif"></li>
 					</ul>
 
-					<form action="#">
+					<form action="./joinResult.jsp" method="post">
 						<table class="jmt">
 						
 							<tr style="border-top: 1.7px solid black;">
 								<td class="jmtl">이름</td>
 								<td class="jmtr">
-								<input class="jmt_input jmust" id="jm_t_name" type="text"style="width: 189px;">
+								<input name="name" class="jmt_input jmust" id="jm_t_name" type="text" style="width: 189px;">
 								</td>
 							</tr>
 
 							<tr>
 								<td class="jmtl">아이디(필수)</td>
 								<td class="jmtr">
-								<input class="jmt_input jmust" id="jm_t_id" style="float: left; width: 126px;" type="text"> 
+								<input name="id" class="jmt_input jmust" id="jm_t_id" style="float: left; width: 126px;" type="text"> 
 								<input class="jmtr_b" style="float: left;" type="submit" value="중복확인">
 								<img src="../img/join/btn_how.gif">
 								</td>
@@ -305,7 +318,7 @@
 								<td class="jmtl">비밀번호(필수)</td>
 								<td class="jmtr">
 								<!-- 자바스크립트 넣을 pw1 -->
-								<input class="jmt_input jmust" id="jmt_pw_check1" type="password" style="float: left; width: 189px;"> 
+								<input name="pw" class="jmt_input jmust" id="jmt_pw_check1" type="password" style="float: left; width: 189px;"> 
 								<img src="../img/join/btn_how.gif" style="float: left; padding-left: 3px;">
 								</td>
 							</tr>
@@ -327,7 +340,11 @@
 										<input class="jmt_input jmust" id="jm_t_p1" type="text" style="width: 15%;">
 										- <input class="jmt_input jmust" id="jm_t_p2" type="text" style="width: 15%;">
 										- <input class="jmt_input jmust" id="jm_t_p3" type="text" style="width: 15%;">
-										<input class="jmtr_b" type="submit" value="확인">
+										<input class="jmtr_b" type="button" id="jmbut" value="확인">
+										
+										<input type="hidden" name="phone" id="jm_t_p4">
+										
+										<!-- 자바스크립트로 텍스트 합쳐서 보내기 -->
 									</div>
 
 									<div style="text-align: left; padding: 10px 5px 10px 0;">
@@ -344,8 +361,8 @@
 								<td class="jmtr">
 
 									<div style="padding-top: 1px;">
-										<input class="jmt_input" type="text" style="width: 107px;">
-										@ <input class="jmt_input jmtemail" type="text"> 
+										<input class="jmt_input" id="jm_t_e1" type="text" style="width: 107px;">
+										@ <input class="jmt_input jmtemail" id="jm_t_e2" type="text"> 
 										
 										<select class="jmtemail_s">
 											<option selected="selected">선택하세요</option>
@@ -355,6 +372,8 @@
 										</select> 
 										
 										<input class="jmtr_b" type="submit" value="중복확인">
+										
+										<input type="hidden" name="email" id="jm_t_e3">
 									</div>
 
 									<div style="text-align: left; padding: 10px 5px 10px 0;">
@@ -370,11 +389,14 @@
 								<td class="jmtl">주소(선택)</td>
 								<td class="jmtr">
 									<div style="padding-top: 5px; padding-bottom: 3px;">
-										<input class="jmt_input jmtadd" type="text"> 
+										<input class="jmt_input jmtadd" id="jm_t_a1" type="text"> 
 										<input class="jmtr_b" type="submit" value="주소찾기"> <br>
 									</div> 
 									
-									<input class="jmt_input" type="text" style="width: 98.2%;">
+									<input class="jmt_input" id="jm_t_a2" type="text" style="width: 98.2%;">
+									
+									<input type="hidden" name="address" id="jm_t_a3">
+									
 									<p>등록하신 주소 근처 매장에서 진행하는 이벤트 소식을 알려 드립니다.</p>
 								</td>
 							</tr>
@@ -387,8 +409,10 @@
 										<input class="jmtrft jmust" id="jm_t_birth1" type="text">년 
 										<input class="jmtrft jmust"  id="jm_t_birth2" type="text">월 
 										<input class="jmtrft jmust"  id="jm_t_birth3" type="text">일 
-										<input type="radio" name="birth" checked="checked" style="padding-left: 3px;">양력
-										<input type="radio" name="birth">음력
+										<input type="radio" name="birth1" checked="checked" style="padding-left: 3px;">양력
+										<input type="radio" name="birth1">음력
+										
+										<input type="hidden" name="birth" id="jm_t_birth4">
 									</div>
 									
 									<p style="padding-bottom: 5px;">멤버십 등급에 따른 쿠폰을 받아보실 수 있습니다.</p>
@@ -413,7 +437,7 @@
 							<tr style="text-align: center;">
 								<td colspan="2">
 									<div style="margin-bottom: 12%;">
-										<input id="jmf_b1" type="button" value="가입하기">
+										<input id="jmf_b1" type="submit" value="가입하기">
 										<input id="jmf_b2" type="button" value="이전페이지">
 										<!-- 자바스크립트 : window.history.back(); -->
 

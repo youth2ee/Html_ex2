@@ -14,6 +14,10 @@
 	padding-right: 6%;
 }
 
+.write_wrap1{
+	width: 100%;
+}
+
 .write1_1 {
 	margin-bottom: 8%;
 }
@@ -23,8 +27,8 @@
 }
 
 .write2 {
-	width: 70%;
-	float: left;
+	width: 74%;
+	float: right;
 	margin: 0 auto;
 	padding-top: 5%;
 }
@@ -74,11 +78,11 @@
 }
 
 #nt_1{
-	width: 15%;
+	width: 11%;
 }
 
 #nt_2{
-	width: 15%;
+	width: 11%;
 }
 
 #nt_3{
@@ -86,7 +90,7 @@
 }
 
 #nt_4{
-	width: 10%;
+	width: 18%;
 }
 
 .nt2{
